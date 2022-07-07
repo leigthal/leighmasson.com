@@ -140,25 +140,25 @@ position: absolute;
 }
 
 .i1 {
-	background: url("http://www.leighmasson.com/images/portfolio/one.png");
+	background: url(images/portfolio/one.png);
 	background-size: cover;
 	background-position: center center;
 }
 
 .i2 {
-	background: url("http://www.leighmasson.com/images/portfolio/two.png");
+	background: url(images/portfolio/two.png);
 	background-size: cover;
 	background-position: right top;
 }
 
 .i3 {
-	background: url("http://www.leighmasson.com/images/portfolio/three.png");
+	background: url(images/portfolio/three.png);
 	background-size: cover;
 	background-position: right top;
 }
 
 .i4 {
-	background: url("http://www.leighmasson.com/images/portfolio/four.png");
+	background: url(images/portfolio/four.png);
 	background-size: cover;
 	background-position: right top;
 }
@@ -322,7 +322,7 @@ position: relative;
 .linkedin {
   height:64px;
   width: 64px;
-  background:url(http://www.leighmasson.com/images/social/icn_white_linkedin.png);
+  background:url(images/social/icn_white_linkedin.png);
   background-size: contain;
   margin: 16px;
 }
@@ -330,7 +330,7 @@ position: relative;
 .dribbble {
   height:64px;
   width: 64px;
-  background:url(http://www.leighmasson.com/images/social/icn_white_dribbble.png);
+  background:url(images/social/icn_white_dribbble.png);
   background-size: contain;
   margin: 16px;
 }
@@ -338,7 +338,7 @@ position: relative;
 .medium {
   height:64px;
   width: 64px;
-  background:url(http://www.leighmasson.com/images/social/icn_white_medium.png);
+  background:url(images/social/icn_white_medium.png);
   background-size: contain;
   margin: 16px;
 }
