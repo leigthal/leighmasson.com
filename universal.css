@@ -470,10 +470,10 @@ color: white;
   --bg-color-incent: #0064FFCC;
   --bg-color-mailplus: #018675CC;
   --bg-color-asos: #712DCCCC; 
-  --bg-url-optus: url(http://www.leighmasson.com/images/portfolio/two.png);
-  --bg-url-incent: url(http://www.leighmasson.com/images/portfolio/three.png); 
-  --bg-url-mailplus: url(http://www.leighmasson.com/images/portfolio/one.png);
-  --bg-url-asos: url(http://www.leighmasson.com/images/portfolio/four.png); 
+  --bg-url-optus: url(images/portfolio/two.png);
+  --bg-url-incent: url(images/portfolio/three.png); 
+  --bg-url-mailplus: url(images/portfolio/one.png);
+  --bg-url-asos: url(images/portfolio/four.png); 
 }
 
 
