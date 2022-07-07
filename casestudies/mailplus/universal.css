@@ -251,19 +251,19 @@ strong {
 }
 
 .i1 {
-	background: url("http://www.leighmasson.com/images/portfolio/one.png");
+	background: url(images/portfolio/one.png);
 	background-size: cover;
 	background-position: center center;
 }
 
 .i2 {
-	background: url("http://www.leighmasson.com/images/portfolio/two.png");
+	background: url(images/portfolio/two.png);
 	background-size: cover;
 	background-position: right top;
 }
 
 .i3 {
-	background: url("http://www.leighmasson.com/images/portfolio/three.png");
+	background: url(images/portfolio/three.png);
 	background-size: cover;
 	background-position: right top;
 }
@@ -373,7 +373,7 @@ position: relative;
 }
 
 .linkedin:hover {
-   background:url(http://www.leighmasson.com/images/social/icn_colour_linkedin.png); 
+   background:url(images/social/icn_colour_linkedin.png); 
    background-size: contain;
    cursor: hand;
 }
@@ -387,7 +387,7 @@ position: relative;
 }
 
 .dribbble:hover {
-   background:url(http://www.leighmasson.com/images/social/icn_colour_dribbble.png); 
+   background:url(images/social/icn_colour_dribbble.png); 
    background-size: contain;
    cursor: hand;
 }
@@ -539,11 +539,11 @@ margin: 2%;
 }
 
 .image_lowdensity {
-  background: url(http://www.leighmasson.com/casestudies/mailplus/images/img_lowdensity.png);
+  background: url(images/img_lowdensity.png);
 }
 
 .image_highdensity {
-  background: url(http://www.leighmasson.com/casestudies/mailplus/images/img_highdensity.png);
+  background: url(images/img_highdensity.png);
 }
 
 
