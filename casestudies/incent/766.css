@@ -1,0 +1,44 @@
+@media screen and (max-width: 766px) {
+
+.container {
+	max-width: 96%;
+	}	
+	
+	
+.box50 {
+	display: block;
+	width: 100%;
+}
+
+
+.icon {
+	width: 100%;
+}
+
+.screen {
+	height: 100%;
+	max-height: 240px;
+}
+
+.parallax {
+	min-height: 240px;
+	background-attachment: scroll;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.stat_cluster {
+	width: 100%;
+}
+
+
+}
+
+
+@media screen and (max-width: 322px) {
+
+
+
+
+}

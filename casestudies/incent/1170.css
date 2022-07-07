@@ -1,0 +1,28 @@
+@media screen and (max-width: 1170px) and (min-width: 766px) {
+
+
+.container {
+	max-width: 96%;
+	}	
+
+.box50 {
+	display: block;
+	width: 48%;
+}
+
+.icon {
+	width: 30%;
+}
+
+
+
+.screen {
+	height: 100%;
+	max-height: 320px;
+}
+
+.stat_cluster {
+	width: 48%;
+}
+
+}
