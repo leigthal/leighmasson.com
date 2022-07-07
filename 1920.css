@@ -1,0 +1,400 @@
+@media screen and (min-width: 1170px) {
+
+p {
+    font-size: 18px;
+    line-height: 20px;
+}
+
+.container {
+	width: 80%;
+	}
+	
+
+.card {
+	width: 48%;
+}
+
+
+
+.parallax {
+position: relative;
+  height: 800px;
+  margin: 0% auto;
+  padding: 0 !important;
+}
+
+
+.parallax-layer {
+  height: 100%;
+  padding: 0 !important;
+  background-size: contain;
+  background-repeat: no-repeat;
+position: absolute;
+
+}
+
+
+.page {
+position: relative;
+  margin-top: 0%;
+  width: 100%;
+}
+
+
+
+.container:hover .overlay-1 {
+  opacity: 0.8;
+}
+
+
+
+/* UNIVERSAL PARALLAX SETTINGS */
+
+
+
+/* Green */
+.layer-1 {
+	margin-top: 1%;
+	width: 38%;
+	left: 35%;
+	}
+
+/* Purple */
+.layer-2 {
+	margin-top: 4%;
+	width: 48%;
+	left: 17%;
+}
+
+/* light purple*/
+.layer-3 {
+	margin-top: 8%;
+	width: 46%;
+	left: 12%;
+}
+
+/* red*/
+.layer-4 {
+	margin-top: 12%;
+	width: 32%;
+	left: 4%;
+}
+
+/*turqoise*/
+.layer-5 {
+	margin-top: 8%;
+	width: 32%;
+	left: 50%;
+}
+
+/*lightblue*/
+.layer-6 {
+	margin-top: 10%;
+	width: 43%;
+	left: 36%;
+}
+
+/*Macbook*/
+.layer-7 {
+	margin-top: 4%;
+	width: 24%;
+	left: 20%;
+}
+
+/*iPad*/
+.layer-8 {
+	margin-top: 9%;
+	width: 20%;
+	left: 50%;
+}
+
+/*light blue*/
+.layer-9 {
+	margin-top: 17%;
+	width: 46%;
+	left: 50%;
+}
+
+/*Phone*/
+.layer-10 {
+	margin-top: 16%;
+	width: 15%;
+	left: 70%;
+}
+
+/*Pink*/
+.layer-11 {
+	margin-top: 22%;
+	width: 40%;
+	left: 0%;
+}
+
+/*storm blue*/
+.layer-12 {
+	margin-top: 26%;
+	width: 32%;
+	left: 40%;
+}
+
+/*pink*/
+.layer-13 {
+	margin-top: 22%;
+	width: 32%;
+	left: 24%;
+}
+
+/*watch*/
+.layer-14 {
+	margin-top: 33%;
+	width: 9%;
+	left: 8%;
+}
+
+/*deep purple*/
+.layer-15 {
+	margin-top: 38%;
+	width: 24%;
+	left: 16%;
+}
+
+/*cyan*/
+.layer-16 {
+	margin-top: 32%;
+	width: 40%;
+	left: 64%;
+}
+
+/*white block */
+.layer-block {
+	margin-top: 56%;
+}
+
+/*imac*/
+.layer-17 {
+	margin-top: 28%;
+	width: 58%;
+	left: 26%;
+}
+
+
+.client {
+	width: calc(92%/6);
+	margin: calc(2%/6);
+	max-width: 160px;
+}
+
+
+.big-words-2 {
+	width: 80%;
+	max-width: 1280px;
+}
+
+
+
+
+h1 {
+	font-family: sans-serif;
+}
+
+
+/* WEAPONS OF CHOICE */
+
+span {
+  transition: opacity 0.32s ease-in;
+-moz-transition: opacity 0.32 ease-in;
+-ms-transition: opacity 0.32s ease-in;
+-o-transition: opacity 0.32s ease-in;
+-webkit-transition: opacity 0.32s ease-in;
+}
+
+.weapons {
+	min-height: 192px;
+}
+
+.divider {
+  width: 100%;
+  height: 8px !important;
+  border: #cccccc;
+}
+
+.p1{
+	display: none;
+	opacity: 0;
+}
+
+.p2{
+	display: none;
+	opacity: 0;
+}
+
+.p3{
+	display: none;
+	opacity: 0;
+}
+
+.p4{
+	display: none;
+	opacity: 0;
+}
+
+.p5{
+	display: none;
+	opacity: 0;
+}
+
+.p6{
+	display: none;
+	opacity: 0;
+}
+
+.sketch {
+  background: url(images/sketch-grey.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+
+}
+
+.sketch:hover {
+  background: url(images/sketch-clr.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.sketch:hover ~ span.p1 {
+  display: block;
+  opacity: 1;
+}
+
+.flinto {
+  background: url(images/flinto-grey.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.flinto:hover {
+  background: url(images/flinto-clr.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.flinto:hover ~ span.p2 {
+  display: block;
+  opacity: 1;
+}
+
+.photoshop {
+  background: url(images/ps-grey.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.photoshop:hover {
+  background: url(images/ps-clr.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.photoshop:hover ~ span.p3 {
+  display: block;
+  opacity: 1;
+}
+
+.Experience-design {
+  background: url(images/xd-grey.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.Experience-design:hover {
+  background: url(images/xd-clr.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.Experience-design:hover ~ span.p4 {
+  display: block;
+  opacity: 1;
+}
+
+
+.aftereffects {
+  background: url(images/ae-grey.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+
+}
+
+.aftereffects:hover {
+  background: url(images/ae-clr.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.aftereffects:hover ~ span.p5 {
+  display: block;
+  opacity: 1;
+}
+
+.finalcut {
+  background: url(images/fc-grey.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+
+}
+
+.finalcut:hover {
+  background: url(images/fc-clr.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.finalcut:hover ~ span.p6 {
+  display: block;
+  opacity: 1;
+}
+
+
+
+.icon {
+  width: 80px;
+  height: 80px;
+  /* border: 2px solid red; */
+  background-size: 64%;
+  text-align: center;
+  line-height: 96px;
+transition: background-size 0.32s ease-in;
+-moz-transition: background-size 0.32s ease-in;
+-ms-transition: background-size 0.32s ease-in;
+-o-transition: background-size 0.32s ease-in;
+-webkit-transition: background-size 0.32s ease-in;
+}
+
+.icon:hover {
+	background-size: 72%;
+}
+
+.item.i1:hover .overlay{
+background: yellow;
+color: black;
+}
+
+.item.i2:hover .overlay{
+background: #06EFFD;
+color: black;
+}
+
+.item.i3:hover .overlay{
+background: #0064ff;
+color: white;
+}
+
+
+.item.i4:hover .overlay{
+background: #712DCC;
+color: white;
+}
+
+
+
+
+}
