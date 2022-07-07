@@ -1,0 +1,733 @@
+<HTML>
+<head>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-41272215-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-41272215-2');
+</script>
+
+<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5N2KP6D');</script>
+<!-- End Google Tag Manager -->
+
+<style>
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,500,900');
+
+/* QUOTES */
+
+.quote_rotate {
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  margin: 0 auto;
+  width: 96%;
+  margin-bottom: 80px;
+  top: 0px;
+  opacity: 0;
+  -moz-opacity: 0;
+  filter:alpha(opacity=0);
+  line-height: 32px;
+  position: absolute;
+}
+
+
+.quote_box {
+	position: relative;
+}
+
+.placeholder{
+height: 240px;
+}
+
+
+.quote_heading {
+  font-size: 32px;
+}
+
+.quote {
+  font-size: 16px;
+}
+
+.author {
+  font-size: 16px;
+  font-style: italic;
+}
+
+
+/*QUOTE ANIMATION*/
+
+
+.quote_rotate:nth-child(1) {
+  -webkit-animation: quoteshift 40s 0s infinite linear;
+  -moz-animation: quoteshift 40s 0s infinite linear;
+  -ms-animation: quoteshift 40s 0s infinite linear;
+  -o-animation: quoteshift 40s 0s infinite linear;
+  animation: quoteshift 40s 0s infinite linear;
+}
+ 
+.quote_rotate:nth-child(2) {
+  -webkit-animation: quoteshift 40s 8s infinite linear;
+  -moz-animation: quoteshift 40s 8s infinite linear;
+  -ms-animation: quoteshift 40s 8s infinite linear;
+  -o-animation: quoteshift 40s 8s infinite linear;
+  animation: quoteshift 40s 8s infinite linear;
+}
+ 
+ 
+.quote_rotate:nth-child(3) {
+  -webkit-animation: quoteshift 40s 16s infinite linear;
+  -moz-animation: quoteshift 40s 16s infinite linear;
+  -ms-animation: quoteshift 40s 16s infinite linear;
+  -o-animation: quoteshift 40s 16s infinite linear;
+  animation: quoteshift 40s 16s infinite linear;
+}
+  
+  
+.quote_rotate:nth-child(4) {
+  -webkit-animation: quoteshift 40s 24s infinite linear;
+  -moz-animation: quoteshift 40s 24s infinite linear;
+  -ms-animation: quoteshift 40s 24s infinite linear;
+  -o-animation: quoteshift 40s 24s infinite linear;
+  animation: quoteshift 40s 24s infinite linear;
+}
+
+
+.quote_rotate:nth-child(5) {
+  -webkit-animation: quoteshift 40s 32s infinite linear;
+  -moz-animation: quoteshift 40s 32s infinite linear;
+  -ms-animation: quoteshift 40s 32s infinite linear;
+  -o-animation: quoteshift 40s 32s infinite linear;
+  animation: quoteshift 40s 32s infinite linear;
+}
+
+
+/* ^ HOW THIS WORKS 
+
+
+FOR EACH QUOTE, Above
+
+1. create a nth-child(x) with a new number in brackets.
+
+2. increase the delay (second XXs value) on the last child by an increment of 10 from the previous value 
+ie. if child 4 has delay value of 30 seconds, then child 5 will have a delay of 30 seconds, so it begins after child 4.
+
+3. increase the duration of all children (the first XXs value) by an increment of 10.
+
+
+FOR EACH QUOTE, below
+
+Keyframe animation as so
+
+100 percent / 5 quotes = 20% per quote.
+
+0% = start of animation -> 4% quote should be fully visible -> quote stays visible to 16% -> quote goes invisible by 20%
+
+For the remaining 80%, animation will stay dormant, waiting for the other animations to complete... this 80% is to ensure that animations don't overlap.
+
+*/
+
+
+
+   
+ 
+/*KEYFRAMES*/
+@keyframes "quoteshift" {
+ 0% {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+    opacity: 0;
+ }
+ 2% {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    filter: alpha(opacity=100);
+    opacity: 1;
+    display: block;
+ }
+ 18% {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    filter: alpha(opacity=100);
+    opacity: 1;
+    display: block;
+ }
+ 20% {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+    opacity: 0;
+ }
+ 100% {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+    opacity: 0;
+ }
+ 
+}
+ 
+@-moz-keyframes quoteshift {
+ 0% {
+   filter: alpha(opacity=0);
+   opacity: 0;
+ }
+ 2% {
+   filter: alpha(opacity=100);
+   opacity: 1;
+   display: block;
+ }
+ 18% {
+   filter: alpha(opacity=100);
+   opacity: 1;
+   display: block;
+ }
+ 20% {
+   filter: alpha(opacity=0);
+   opacity: 0;
+ }
+ 100% {
+   filter: alpha(opacity=0);
+   opacity: 0;
+ }
+ 
+}
+ 
+@-webkit-keyframes "quoteshift" {
+ 0% {
+   filter: alpha(opacity=0);
+   opacity: 0;
+ }
+2% {
+   filter: alpha(opacity=100);
+   opacity: 1;
+   display: block;
+ }
+18% {
+   filter: alpha(opacity=100);
+   opacity: 1;
+ }
+ 20% {
+   filter: alpha(opacity=0);
+   opacity: 0;
+ }
+ 100% {
+   filter: alpha(opacity=0);
+   opacity: 0;
+ }
+ 
+}
+ 
+@-ms-keyframes "quoteshift" {
+ 0% {
+   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+   filter: alpha(opacity=0);
+   opacity: 0;
+ }
+2% {
+   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+   filter: alpha(opacity=100);
+   opacity: 1;
+   display: block;
+ }
+18% {
+   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+   filter: alpha(opacity=100);
+   opacity: 1;
+   display: block;
+ }
+20% {
+   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+   filter: alpha(opacity=0);
+   opacity: 0;
+ }
+ 100% {
+   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+   filter: alpha(opacity=0);
+   opacity: 0;
+ }
+ 
+}
+ 
+@-o-keyframes "quoteshift" {
+0% {
+   filter: alpha(opacity=0);
+   opacity: 0;
+ }
+2% {
+   filter: alpha(opacity=100);
+   opacity: 1;
+   display: block;
+ }
+18% {
+   filter: alpha(opacity=100);
+   opacity: 1;
+   display: block;
+ }
+20% {
+   filter: alpha(opacity=0);
+   opacity: 0;
+ }
+ 100% {
+   filter: alpha(opacity=0);
+   opacity: 0;
+ }
+ 
+}
+
+
+
+</style>
+
+<!-- WP/Wordpress? Wix? Bootstrap? - No Thanks!...
+There are none of those tags here, because I believe the proof is in the pudding.
+
+I wrote this site from scratch, with a basic knowledge HTML/CSS, a lot of trial and error, failure and time on W3 schools. 
+Im not a front end developer, but I do believe in understanding basic web principles is key to being a good UI designer.
+
+Also, the most important thing to UX design?
+
+Empathy.
+
+I share some and understand developer pain points- what can and can't be done easily.
+If you have any questions about the construction of this site, I'd love to help out.
+
+-->
+
+
+<title>Leigh Masson - MailPlus Case Study</title>
+
+
+<link rel="stylesheet" href="universal.css">
+<link rel="stylesheet" href="766.css">
+<link rel="stylesheet" href="1170.css">
+<link rel="stylesheet" href="1920.css">
+
+
+<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+
+
+</head>
+
+<body>
+
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5N2KP6D"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<div class="nav">
+	<a href="http://www.leighmasson.com/index.html" class="n_back"><div class="chevron"></div>MailPlus</a>
+</div>
+
+<div class="section bg-yellow">
+
+<div class="container txt_center txt_black">
+
+<h1>Designing a Mobile Logistics Platform</h1><br>
+
+<p>Backed by Australia Post, MailPlus is the nimble pick-up and delivery service thats tailored to small and medium-sized Australian businesses.</p>
+
+<p>Every day, drivers are under pressure to save time and be efficient. They were using printed spreadsheets to log and keep track of tasks.</p>
+<p>The UX challenge was to craft an app to be just as mobile, fast and efficient as the Mailplus drivers.</p><br>
+
+</div>
+
+
+<div class="container flex flex_in">
+	<h3 class="txt_black">Key Tools</h3>
+	<div class="break8"></div>
+	<div class="icon i_invision"></div>
+	<div class="icon i_photoshop"></div>
+	
+
+	<div class="break32"></div>
+</div>
+
+
+<div class="container flex_in">
+	<h3 class="txt_black">Key Skills</h3>
+	<div class="break8"></div>
+	<div class="tag">Field Testing</div>
+	<div class="tag">Data Driven Design</div>
+	<div class="tag">Data Capture</div>
+	<div class="tag">Reachability</div>
+
+</div>
+
+</div>
+
+<div class="section parallax flex-end bg-map"></div>
+
+<div class="section bg-grey">
+<div class="container txt_white txt_left flex_out">
+
+<div class="box50">
+
+<h2>The data-driven approach</h2><br>
+
+<p>To gather quantitative data, a primitive app called 'Run Capture' was created. The app would track driver geo-location without need for intervention, rolling out nation-wide for multiple franchises and runs.</p>
+
+<p>This data established how drivers were most/least efficient and how runs were structured.</p>
+<p>Drivers could also add notes about each stop such as errands performed and items delivered.</p>  
+
+<p>Simple statistics in the Run Capture app about errands were displayed back to the driver. This gamified the data-collection process with drivers trying to achieve personal bests and outdo each other.</p>
+
+<p>This provided a wealth of data about how many clients and errands they would record in given timeframes in different areas.</p>
+
+</div><!--/Box50-->
+
+<div class="box50 flex_in">
+<img class="device" src="images/img_runcapture.png"></img>
+</div><!--/Box50-->
+
+
+</div><!--/Container-->
+
+</div><!--/Section-->
+
+<div class="section bg-paper">
+<div class="container txt_center txt_black">
+
+
+<h2 class="txt_black">Understanding the data</h2><br>
+
+<p class="txt_white"><p>The run capture app revealed that the majority of drivers make one stop to service multiple businesses, walking between them as opposed to returning to the vehicle each time. Drivers who adopted this approach are more efficient in terms of errands, but less effective at sales. This behaviour varied between low and high business density regions.</p>
+
+
+</div><!--/Container-->
+
+<div class="container flex_out">
+
+  <div class="card">
+    <div class="c_image image_lowdensity"></div>
+    <div class="c_table txt_left">
+      <h4>Low Business Density Regions</h4>
+      <div class="c_row"></div>
+      <br>Less volume of clients and errands per stop<div class="c_row"></div>
+      <br> High bulk order  purchase (the night before) per business.<div class="c_row"></div>
+      <br>Excellent add-on sales. Driver has more time to talk to each client and tends to have greater stock availability.<br>
+      <div class="break32"></div>
+    </div>
+  </div>
+  
+    <div class="card">
+    <div class="c_image image_highdensity"></div>
+    <div class="c_table txt_left">
+      <h4>High Business Density Regions</h4>
+      <div class="c_row"></div>
+      <br>High volume of clients and errands per stop<div class="c_row"></div>
+      <br>Less bulk order purchases (the night before) per business <div class="c_row"></div>
+      <br>Poor add-on sales. Additional items often requested at time of delivery, that are not in stock.<br>
+      <div class="break32"></div>
+    </div>
+  </div>
+  
+<div class="break32"></div>
+
+</div><!--/Container-->
+
+</div><!--/Section-->
+
+
+<div class="section parallax bg-hero">
+<div class="container">
+
+</div>
+</div>
+
+
+
+<div class="section bg-paper">
+<div class="container txt_center txt_black">
+
+
+<h2 class="txt_black">Understanding the Users</h2><br>
+
+<p class="txt_white"><p>Qualitative interviews were conducted with drivers on two seperate runs to better understand and isolate each region's 3 top pain points.</p>
+
+
+</div><!--/Container-->
+
+<div class="container flex_out">
+
+  <div class="card">
+  
+    <div class="c_table txt_left">
+      <h4>Low Business Density Regions</h4><br>
+      
+      Primary pain point: <strong>driving routes</strong>
+      
+      <div class="c_row"></div>
+      
+      
+      
+      <ul class="nobullet">
+	<li class="prohibit">Long and ineffective driving routes that didn't capitalise on the amount of businesses available</li>
+	<li class="prohibit">Typically only one business to service per stop</li>
+	<li class="prohibit">Sales and errands hard to increase at driver-level, as customers pre-ordered in advance</li>
+</ul>
+      
+    </div>
+  </div>
+  
+    <div class="card">
+   
+    <div class="c_table txt_left">
+      <h4>High Business Density Regions</h4><br>
+      
+      Primary pain point: <strong>sales process</strong>
+      
+      <div class="c_row"></div> 
+      
+            <ul class="nobullet">
+	<li class="prohibit">Selling additional items on a run means returning to the van which reduces efficiency</li>
+	<li class="prohibit">Stock logging on-paper is tedious and resulted in mistakes at the end of the day</li>
+	<li class="prohibit">No easy way to know if you have product available for sale, resulted in missed opportunities</li>
+</ul>
+
+    </div>
+  </div>
+
+  
+<div class="break64"></div>
+
+<p>It was also observed that drivers in high business density areas,  while efficient at getting to multiple clients often missed errands as they didn't always carry the list with them or tick off errands as they go.</p>
+
+
+</div>
+
+</div><!--/Container-->
+
+</div><!--/Section-->
+
+
+
+<div class="section parallax flex-end bg-map">
+
+	<div class="container_card flex_in bg-green txt_left txt_white">
+
+		<h2>Solutions</h2><br>
+		
+		<div class="break32"></div>
+
+<ul class="nobullet">
+	<li class="tick-white">Restructure runs to reduce KMs travelled &  better group businesses.</li>
+	<li class="tick-white">Replace paper based stock and inventory management with in-app functionality</li>
+	<li class="tick-white">Simple errand 'to do' list, automated and gamified to optimise efficiency</li>
+	<li class="tick-white">Smart inventory recommendations based on prior purchase, means driver more likely to have stock on hand</li>
+	<li class="tick-white">Statistics and sales figures shown in-app to encourage cross-selling personal bests</li>
+	<li class="tick-white">App must be usable one-hand per stop!</li>
+</ul>
+	
+	</div>
+
+</div><!--/Section-->
+
+
+
+<div class="section bg-grey">
+<div class="container txt_white txt_left flex_out">
+
+<div class="box50 m_order2">
+
+<h2>Designing for Reachability</h2><br>
+
+<p><strong>ONE HANDED USE</strong>
+
+<p>Field testing underscored the importance of drivers being able to use the app one handed, as they use their other arm for carrying goods. This meant deliberate placement of buttons and features for the thumb.<p>
+
+<ul>
+<li>List scrolling and operation (a frequent job task) was placed in the natural zone.</li><br>
+<li>Completing a job and finalisation tasks were placed just a reach further to prevent accidental taps</li><br>
+<li>Secondary tasks such as signature and proof of delivery were placed a stretch further, as these functions should only be undertaken after items have been delivered.</li>
+</ul>
+
+</div><!--/Box50-->
+
+<div class="box50 m_order1">
+<img class="device" src="images/img_reachability.png"></img>
+</div><!--/Box50-->
+
+</div><!--/Container-->
+
+<div class="break80"></div>
+
+
+<div class="container txt_white txt_left flex_out">
+
+
+
+<div class="box50 flex_in m_order1">
+<img class="device" src="images/img_crosssales.png"></img>
+</div><!--/Box50-->
+
+
+<div class="box50 m_order2">
+
+<h2>Closing Sales</h2><br>
+
+<p><strong>Cross Selling</strong>
+
+<p>Batch pricing and stock management were a hassle for drivers to do on the spot in a paper based system. This resulted in reduced efficiency and missed cross selling opportunities.</p>
+
+<p>The sales process for drivers was streamlined by giving them on-the-spot access to stock levels and sales in-app, without need to do maths or return to the van.
+Drivers can easily increase batch volume on product fulfilment or add on entirely new items with totals bulk prices updated automatically.</p>
+
+<p>By recording sales data, it also ensures franchises can maximise greater on-demand availability of products region by region to accurately forecast future sales.</p>
+
+<p>This automated calculation for drivers, streamlined the driver's run process making it a pain free addition to their day while also increasing franchise profitability.</p>
+
+</div><!--/Box50-->
+
+
+
+</div><!--/Container-->
+
+
+</div><!--/Section-->
+
+
+<div class="section bg-yellow">
+	<div class="container">
+		
+		<div class="quote_box flex">
+		
+		
+		<div class="quote_rotate">
+			<div class="flex no-wrap">
+
+			</div><br>
+		  <span class="quote">How did we ever get along without it? The prompt and reliable service of mail & parcel pick up greatly assists our business by saving time and money in avoiding downtime with staff out of office. With the helpful and friendly staff at Mailplus servicing our every requirement, I would highly recommend using their services to assist any business.</span><br><br> 
+		  <span class="author">-Valeco Homes</span>
+		</div>
+		
+		<div class="quote_rotate">
+			<div class="flex no-wrap">
+
+			</div><br>
+
+		  <span class="quote">Thank you so much to everyone at Mailplus for everything this year! I really want to say just how wonderful Morris (Mailplus Crows Nest) has been; he is always prompt, very friendly and always willing to go the extra mile</span><br><br> 
+		  <span class="author">-Variety, The Children's Charity</span>
+		</div>
+		
+		<div class="quote_rotate">
+			<div class="flex no-wrap">
+
+			</div><br>
+
+		  <span class="quote">We use Mailplus on a daily basis for the delivery of our mail from the Post Office, pickup up outgoing mail and lodging it with Australia Post</span><br><br> 
+		  <span class="author">-Europcar</span>
+		</div>
+		
+
+		<div class="quote_rotate">
+			<div class="flex no-wrap">
+
+			</div><br>
+		  <span class="quote">How did we ever get along without it? The prompt and reliable service of mail & parcel pick up greatly assists our business by saving time and money in avoiding downtime with staff out of office. With the helpful and friendly staff at Mailplus servicing our every requirement, I would highly recommend using their services to assist any business.</span><br><br> 
+		  <span class="author">-Valeco Homes</span>
+		</div>
+		
+		<div class="quote_rotate">
+			<div class="flex no-wrap">
+
+			</div><br>
+
+		  <span class="quote">Thank you so much to everyone at Mailplus for everything this year! I really want to say just how wonderful Morris (Mailplus Crows Nest) has been; he is always prompt, very friendly and always willing to go the extra mile</span><br><br> 
+		  <span class="author">-Variety, The Children's Charity</span>
+		</div>
+		
+		
+		
+		<div class="placeholder"></div>
+		
+		
+</div><!--/quotebox-->
+
+
+</div><!--/Container-->
+
+</div><!--/Section-->
+
+
+
+<div class="section bg-green">
+
+<div class="container flex_out">
+<img class="device" src="images/img_delivery.png"></img></div>
+
+
+<div class="container txt_left txt_white">
+<div class="break32"></div>
+
+<h2>Successful Delivery</h2><br>
+
+<p>The digital solution became an essential part of Mailplus drivers' daily routine- providing a structure that removed assumptions and guesswork.</p>
+
+<p>It ensured greater consistency around errands and simplified their driving route while also providing a new revenue stream- with the ability to cross sell with ease.</p>
+
+<p>The Mailplus franchises gain greater transparency to the run process and access to real time metrics that increase efficiency, productivity and profitability daily.</p><br>
+
+
+
+<br>
+
+
+<div class="stats">
+
+<h3>Nationwide Stats</h3>
+
+<div class="break32"></div>
+
+	<dev class="stat_cluster">
+		<dev class="stat_figure">100+</dev>
+		<dev class="stat_line">Franchises</dev>		
+	</dev>
+	
+	<dev class="stat_cluster">
+		<dev class="stat_figure">20,000+</dev>
+		<dev class="stat_line">Daily Deliveries</dev>		
+	</dev>
+	
+	<dev class="stat_cluster">
+		<dev class="stat_figure">7,000+</dev>
+		<dev class="stat_line">Happy Customers</dev>		
+	</dev>
+</div>
+
+
+</div>
+
+
+
+
+</div>
+
+
+
+
+    
+    
+</div>
+
+
+
+
+<div class="footer">(C) Leigh Masson 2019</div>
+ 
+
+</div><!--/Page-->
+
+
+
+<script src="parallax.js"></script>
+
+</body>
+</HTML>

@@ -1,0 +1,63 @@
+@media screen and (max-width: 1170px) and (min-width: 766px) {
+
+
+.container {
+	max-width: 88%;
+	margin: 0 auto;
+	}	
+	
+.container_card {
+	max-width: 80%;
+	}	
+
+.box50 {
+	width: 48%;
+}
+
+.icon {
+	min-width: 128px;
+}
+
+
+
+.device {
+	max-height: 480px;
+}
+
+.gplay {
+	display:inline-block;
+	overflow:hidden;
+	background:url(images/googleplay.png) no-repeat;
+	background-size: contain;
+	background-position: center center;
+	min-width: 160px;
+	height: 64px;
+	margin:16px;
+}
+
+
+.appstore {
+	display:inline-block;
+	overflow:hidden;
+	background:url(images/appstore.png) no-repeat;
+	background-size: contain;
+	background-position: center center;
+	min-width: 160px;
+	height: 64px;
+	margin: 16px;
+}
+
+.stat_cluster {
+	width: 48%;
+}
+
+
+/*CARDS */
+
+.card {
+width: 46%;
+max-width: 560px;
+}
+
+
+}

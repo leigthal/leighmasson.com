@@ -1,0 +1,568 @@
+html, body {
+	margin: 0px !important;
+	padding: 0px !important;
+	background: white;
+	width: 100%;
+	text-align: center;	
+	font-family: Roboto, Montserrat, sans-serif;
+	overflow-x: hidden;
+}
+
+p {
+    font-weight: 350;
+    line-height: 24px;
+}
+
+
+h1 {
+	font-size: 48px;
+	font-weight: 400;
+}
+
+h2 {
+	font-size: 32px;
+	font-weight: 500;
+}
+
+h3 {
+    font-weight: 450;
+}
+
+ul.nobullet {
+list-style-type: none;
+padding: 0;
+margin: 0;
+}
+
+li.tick-white {
+display: block;
+position: inherit;
+background: rgba(255,0,0,0.32);
+background: url(images/icn-tick-white.png) no-repeat left top;
+background-size: 32px;
+line-height: 32px;
+padding-left: 40px;
+margin-top: 24px;
+margin-bottom: 24px;
+}
+
+li.prohibit {
+display: block;
+position: inherit;
+background: rgba(255,0,0,0.32);
+background: url(images/icn-prohibit.png) no-repeat left top;
+background-size: 24px;
+line-height: 24px;
+padding-left: 32px;
+margin-top: 16px;
+margin-bottom: 16px;
+}
+
+
+.client {
+	height: intrinsic;
+}
+
+a {
+  text-decoration: none; /* no underline */
+}
+
+strong {
+	font-weight: 600;
+}
+
+.bg-black {
+	background: black;
+}
+
+
+.bg-yellow {
+	background: #FDCE0D;
+}
+	
+.bg-green {
+	background: #018675;
+}
+
+.bg-paper {
+	background: #c9d2d0;
+}
+
+.bg-grey {
+	background: #262626;
+}
+
+
+.bg-gradient {
+	background:-webkit-linear-gradient(#f8f8f8 0%, #ffffff 8%);
+}
+
+.bg-hero {
+	background:url(images/hero-desktop.png);
+}
+
+.bg-happy {
+	background:url(images/img_happy.png);
+}
+
+.bg-map {
+	background:url(images/img_parallax.png);
+}
+
+.bg-fluroblue {
+    background: #06EEFF;
+    color: #2E013A;
+} 
+
+
+.parallax {
+	background-attachment: fixed;
+	min-height: 320px;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+
+.image {
+  display: block;
+  visibility: hidden;
+  width: 100%;
+  height: auto;
+}
+
+
+.placeholder_bad {
+	background: rgba(255,0,0,0.4);
+	height: 254px;
+	width: 139px;
+	margin: 8px;
+}
+
+.placeholder_good {
+	background: rgba(0,255,0,0.4);
+	height: 254px;
+	width: 139px;
+	margin: 8px;
+}
+
+
+.device {
+	margin: 8px;	
+	width: 88%;
+	object-fit: contain;
+	}
+
+
+.section {
+	width: 100%;
+	text-align: center;
+	padding-top: 64px;
+	padding-bottom: 64px;
+	}
+
+.container {
+	margin: 0 auto;
+	max-width: 1280px;
+	padding-bottom: 32px;
+	}	
+	
+.container_card {
+	max-width: 1170px;
+	padding: 32px;
+	border-radius: 8px;
+	margin-left: 16px;
+	margin-right: 16px;
+	}	
+	
+	
+.flex {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.flex-end {
+	display: flex;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+	align-items: flex-end;
+}
+
+
+
+.no-wrap {
+	flex-direction: row;
+	flex-wrap: nowrap;
+}
+
+.flex_out {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+}
+
+.flex_in {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+
+
+.i_photoshop {
+	background: url(images/i_photoshop.png);
+}
+
+.i_invision {
+	background: url(images/i_invision.png);
+}
+
+.i_parallax {
+	background: url(images/parallaxviewer.png);
+}
+
+
+
+.icon {
+	height: 40px;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: contain;
+	margin-top: 16px;
+	margin-bottom: 16px;
+}
+
+
+
+.overlay {
+	width: 100%;
+	height: 64px;
+	line-height: 32px;
+	color: white;
+	font-size: 16px;
+	text-align: left;
+	font-weight: 300;
+	padding: 16px;
+}
+
+.i1 {
+	background: url("http://www.leighmasson.com/images/portfolio/one.png");
+	background-size: cover;
+	background-position: center center;
+}
+
+.i2 {
+	background: url("http://www.leighmasson.com/images/portfolio/two.png");
+	background-size: cover;
+	background-position: right top;
+}
+
+.i3 {
+	background: url("http://www.leighmasson.com/images/portfolio/three.png");
+	background-size: cover;
+	background-position: right top;
+}
+
+
+.page {
+position: relative;
+  margin: 0 auto;
+  margin-top: 0%;
+  width: 100%;
+  z-index: 18;
+  text-align: center;
+  height: auto !important;
+}
+
+.tag {
+	line-height: 24px;
+	font-size: 16px;
+	color: black;
+	border: 1px solid black;
+	border-radius: 4px;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	padding-left: 8px;
+	padding-right: 8px;
+	text-transform: uppercase;
+	white-space:nowrap;
+	margin: 8px;
+}
+
+
+.txt_left {
+	position: relative;
+	text-align: left;
+}
+
+
+.txt_center {
+	position: relative;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.txt_white {
+	color: #ffffff;
+}
+
+.txt_black {
+	color: #000000;
+}
+
+.txt_purple {
+	color: #2E013A;
+}
+
+.txt_fluroblue {
+	color: #06EAFB;
+}
+
+
+.txt_shadow {
+	color: #ffffff;
+	text-shadow: 2px 4px 24px rgba(0,0,0,1);
+	padding: 16px;
+	background: rgba(0,0,0,0.8);
+}
+
+
+
+.small-words {
+	width: 100%;
+	text-align: left;
+}
+
+
+.big-words {
+	width: 100%;
+	text-align: left;
+}
+
+.big-words-2 {
+	margin: 0 auto;
+	text-align: center;
+}
+
+
+.small-word {
+	width: 80px;
+	display: inline-block;
+	padding-bottom: 32px;
+}
+
+.big-word {
+	width: auto;
+	max-width: 90%;
+	max-height: 32px;
+	display: inline-block;
+	padding-right: 2%;
+	padding-bottom: 16px;
+}
+
+
+
+
+.linkedin:hover ~ .show-word-link {
+    display: block;
+}
+
+.linkedin:hover {
+   background:url(http://www.leighmasson.com/images/social/icn_colour_linkedin.png); 
+   background-size: contain;
+   cursor: hand;
+}
+
+.linkedin:hover ~ .hide-word-connect {
+    display: none;
+}
+
+.dribbble:hover ~ .show-word-dribbble {
+    display: block;
+}
+
+.dribbble:hover {
+   background:url(http://www.leighmasson.com/images/social/icn_colour_dribbble.png); 
+   background-size: contain;
+   cursor: hand;
+}
+
+.dribbble:hover ~ .hide-word-connect {
+    display: none;
+}
+
+
+
+
+.nav {
+	position: fixed;
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;
+	background: #FDCE0D;
+	height: 64px;
+	margin-top: 0px;
+	z-index: 99;
+	padding-left: 8px;
+}
+
+.n_back {
+	font-family: roboto, montserrat, sans-serif;
+	color: black;
+	line-height: 64px;
+	cursor: hand;
+	text-transform: uppercase;
+}
+
+.chevron {
+	order: 1;
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background: url(images/chevron.png);
+	background-size: contain;
+	background-position: bottom center;
+	background-repeat: no-repeat;
+	height: 16px;
+}
+
+
+.break0 {
+  flex-basis: 100%;
+}
+
+.break8 {
+  flex-basis: 100%;
+  height: 8px;
+}
+
+.break16 {
+  flex-basis: 100%;
+  height: 16px;
+}
+
+.break32 {
+  flex-basis: 100%;
+  height: 16px;
+}
+
+
+.break64 {
+  flex-basis: 100%;
+  height: 64px;
+}
+
+.break80 {
+  flex-basis: 100%;
+  height: 80px;
+}
+
+
+.footer {
+	padding-top: 16px;
+	padding-bottom: 16px;
+	flex-basis: 100%;
+	color: #cccccc;
+}
+
+
+.gplay {
+	display:inline-block;
+	overflow:hidden;
+	background:url(images/googleplay.png) no-repeat;
+	background-size: contain;
+	background-position: center center;
+	height: 64px;
+	margin:16px;
+}
+
+
+.appstore {
+	display:inline-block;
+	overflow:hidden;
+	background:url(images/appstore.png) no-repeat;
+	background-size: contain;
+	background-position: center center;
+	height: 64px;
+	margin: 16px;
+	min-width: 128px;
+}
+
+
+/*STATS*/
+
+.stats {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify items: flex-start;
+}
+	
+.stat_cluster {
+	display: flex;
+	flex-direction: column;
+	padding-top: 16px;
+	padding-bottom: 16px;
+}
+
+
+.stat_figure {
+	font-size: 32px;
+	width: 100%;
+	text-align: left;
+}
+
+.stat_line {
+	font-size: 16px;
+	width: 100%;
+	text-align: left;
+}
+
+
+
+/* COMPARISON CARDS */
+
+.card {
+margin: 2%;
+  min-height: 240px;
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.image_lowdensity {
+  background: url(http://www.leighmasson.com/casestudies/mailplus/images/img_lowdensity.png);
+}
+
+.image_highdensity {
+  background: url(http://www.leighmasson.com/casestudies/mailplus/images/img_highdensity.png);
+}
+
+
+.c_image {
+  width: 100%;
+  height: 240px;
+  background-size: cover;
+}
+
+.c_table {
+  margin: 0 auto;
+  width: 88%;
+}
+
+.c_row {
+  padding-top: 16px;
+  width: 100%;
+  line-height: 28px;
+  border-bottom: 1px solid #c9d2d0;
+}
+
+
