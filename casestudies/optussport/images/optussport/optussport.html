@@ -1,0 +1,576 @@
+<html>
+
+<head>
+
+<Title>Optus Sport Case Study</Title>
+
+<style>
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,500,900');
+
+
+html, body {
+	margin: 0px !important;
+	padding: 0px !important;
+	width: 100%;
+	font-size: 1em;
+	font-family: Montserrat, sans-serif;
+	overflow-x: hidden !important;
+}
+
+
+H1 {
+	font-family: Montserrat;
+	font-weight: 900;
+}
+
+H2 {
+	font-family: Montserrat;
+	font-weight: 500;
+}
+
+.gplay {
+	display:inline-block;
+	overflow:hidden;
+	background:url(https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png) no-repeat;
+	background-size: 186px;
+	background-position: center center;
+	width:160px;
+	height: 64px;
+	margin: 8px;
+}
+
+
+.appstore {
+	display:inline-block;
+	overflow:hidden;
+	background:url(https://linkmaker.itunes.apple.com/en-us/badge-lrg.svg?releaseDate=2016-07-02&kind=iossoftware&bubble=ios_apps) no-repeat;
+	background-size: contain;
+	background-position: center center;
+	width:160px;
+	height: 64px;
+	margin: 8px;
+}
+
+
+.back {
+	background: rgba(24,24,24,0.64);
+	background-image: url("img_back.png");
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: contain;
+	position: fixed;
+	background-size: 96px;
+	padding-top: 2px;
+	padding-bottom: 8px;
+	padding-left: 128px;
+	padding-right: 16px;
+	height: 32px;
+	top: 4px;
+	z-index: 10;
+}
+
+
+.content {
+
+	margin: 0 auto;
+	width: 98%;
+	max-width: 1208px;
+	display: flex;
+	flex-wrap: wrap;
+	}
+	
+
+
+
+.hero-blurred {
+position: absolute;
+
+    background-image: url("img_hero.png");
+
+    /* Set a specific height */
+    height: 1080px; 
+    width: 50%;
+
+	background-attachment: fixed;
+	background-image: url("img_hero.png");
+	background-position: right top;
+	background-repeat: no-repeat;
+	background-size: cover;
+
+filter: blur(16px);
+    -webkit-filter: blur(16px);
+    -moz-filter: blur(16px);
+    -o-filter: blur(16px);
+    -ms-filter: blur(16px);
+overflow: hidden;
+}
+
+.parallax { 
+    /* The image used */
+    
+
+    /* Set a specific height */
+    width: 100%;
+
+    /* Create the parallax scrolling effect */
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.section-dark {
+	background: #320036;
+	width: 100%;
+	padding-top: 64px;
+	padding-bottom: 64px;
+	text-align: center;
+	position: relative;
+}
+
+.section-light {
+	background: #FFFFFF;
+	width: 100%;
+	padding-top: 64px;
+	padding-bottom: 64px;
+	text-align: center;
+	position: relative;
+}
+
+.content-dark {
+	margin: 0 auto;
+	width: 96%;
+	max-width: 1208px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	color: white;
+	text-align: left;
+}
+
+.content-light {
+	margin: 0 auto;
+	width: 96%;
+	max-width: 1208px;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	color: black;
+	text-align: left;
+}
+
+
+.content-100{
+	width: 100%;
+	margin-top: 64px;
+	margin-bottom: 64px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	text-align: center;
+}
+
+.content-50{
+	width: 50%;
+	margin-top: 64px;
+	margin-bottom: 64px;
+	flex-wrap: wrap;
+	justify-content: center;
+	text-align: left;		
+}
+
+
+.content-hero {
+	margin: 0 auto;
+	width: 40%;
+	color: white;
+	text-align: left;
+}
+
+.image {
+    width: 98%;
+	margin: 0 auto;
+	outline: 32px solid #320036;
+    outline-offset: -16px;
+	overflow-y: hidden;
+}
+
+
+.child1 {
+	width: 94%;
+	order: 1;
+	overflow: hidden;
+}
+
+
+.child2 {
+	margin: 0 auto;
+	width: 500px;
+	background: white;
+	border: 1px solid fuchsia;
+	order: 2;
+}
+
+
+
+@media screen and (max-width: 1026px) {
+
+
+
+.img_ios {
+    /*width: 98%;*/
+    max-width: 380px;
+    max-height: 372px;
+}
+
+.img_tv {
+    /*width: 98%;*/
+    max-width: 346px;
+    max-height: 232px;
+}
+
+.img_web {
+    /*width: 98%;*/
+    max-width: 358px;
+    max-height: 216px;
+}
+
+.img_gif {
+    max-width: 378px;
+}
+
+
+
+.content-50{
+	width: 98%;
+	margin-top: 64px;
+	margin-bottom: 64px;
+	flex-wrap: wrap;
+	justify-content: center;
+	text-align: left;		
+}
+
+
+.hero-text {
+	margin: 0 auto;
+	width: 94%;
+	text-align: left;
+	font-size: 24px;
+	z-index: 4;
+	color: black;
+	padding-bottom: 8%;
+	padding-top: 8%;
+}
+
+	
+.hero-title-m {	
+	position: absolute;
+	width: 90%;
+	height: 160px;
+	text-align: left;
+	margin-left: 8%;
+	margin-top: 24%;
+	background-image: url("img_hero-title.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+	z-index: 8;
+}
+
+.hero-title-d {
+	display: none;
+}
+
+.parallax {
+    background-image: url("img_parallax_mobile.png");
+    height: 460px;
+    background-size: cover;
+}
+
+
+
+.desktop  {
+	display: none;
+}
+
+.hero {
+	background-image: url("img_hero_mobile.png");
+	background-position: right top;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 80%;
+}
+
+
+
+p {
+	font-family: Montserrat;
+	font-weight: 300;
+	font-size: 18px;
+	line-height: 24px;
+}
+
+H1 {
+    	font-size: 40px;
+}
+
+}
+
+
+@media screen and (min-width: 1026px) {
+
+.hero {
+	background-attachment: fixed;
+	background-image: url("img_hero.png");
+	background-position: right top;
+	background-repeat: no-repeat;
+	background-size: cover;
+width: 100%;
+height: 1080px;
+
+}
+
+
+
+.hero-text {
+	height: 100%;
+	width: 42%;
+	padding-bottom: 16%;
+	padding-top: 16%;
+	text-align: left;
+	font-size: 24px;
+	z-index: 4;
+	color: white;
+}
+
+.mobile  {
+	display: none;
+}
+
+.img_ios {
+    /*width: 40%;*/
+    max-width: 818px;
+}
+
+.img_tv {
+    /*width: 48%;*/
+    max-width: 780px;
+    
+}
+
+.img_web {
+    /*width: 98%;*/
+    max-width: 948px;
+}
+
+.img_gif {
+    max-width: 528px;
+}
+
+p {
+	font-family: Montserrat;
+	font-weight: 300;
+	font-size: 20px;
+	line-height: 32px;
+}
+
+H1 {
+    	font-size: 56px;
+}
+
+.hero-title-d {
+	width: 800px;
+	text-align: left;
+	padding-bottom: 8%;
+	padding-top: 16%;
+	background-image: url("img_hero-title.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+	z-index: 8;
+}
+
+.parallax { 
+    /* The image used */
+    background-image: url("img_parallax.png");
+
+    /* Full height */
+    height: 100%; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hero-title-m {
+
+}
+
+
+}
+
+
+</style>
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+
+</head>
+
+<body>
+
+<A HREF="../../index.html"><div class="Back"></div></A>
+
+<div class="hero">
+<div class="hero-title-m"></div>
+
+<div class="hero-blurred desktop"></div>
+
+
+<div class="content">
+<div class="hero-text desktop">
+
+<div class="hero-title-d"></div><br>
+
+<p>Goal posts are moving for telecommunications in Australia. Providers are expanding their digital offerings to consumers, starting with the living room.<br>
+
+Optus raised the stakes with a controversial move - purchasing the English Premier League rights from Foxtel.</p><br>
+
+<p>I was bought on board as a video on demand specialist to craft the Optus Sport suite of applications. The goal was not only to create a consistent cross platform experience but create one that honoured 'the game' and pleased its die hard fans.</p>
+
+
+</div>
+</div>
+
+</div>
+
+
+<div class="hero-text mobile">
+
+<div class="hero-title"></div><br>
+
+<p>Goal posts are moving for telecommunications in Australia. Providers are expanding their digital offerings to consumers, starting with the living room.<br>
+
+Optus raised the stakes with a controversial move - purchasing the English Premier League rights from Foxtel.<br>
+
+I was bought on board as a video on demand specialist to craft the Optus Sport suite of applications. The goal was not only to create a consistent cross platform experience but create one that honoured 'the game' and pleased its die hard fans.</p>
+
+</div>
+
+
+<div class="section-dark">
+<div class="content-dark">
+
+
+
+<h1>APPLE TV & SMART TV</h1><br>
+
+<p>Insights from customer experience research showed that fans consumed different games on different mediums for different purposes.</p>
+<p>Big games involving their favourite teams are watched with mates, live and on the big screen.<br>
+
+This meant either meeting at the pub or crashing on the couch a mate who has Foxtel.<br>
+
+This underscored the importance of supporting smart TVs and streaming devices first such as Apple TV,  Google Chromecast and Fetch TV.</p>
+
+
+
+	<div class="content-100"><img src="img_tv.png" class="img_tv" alt="Optus Sport TV app"></div>
+
+<h2>Cross Platform Consistency</h2><br>
+
+<p>Each TV platform was vastly different to design for, yet we wanted to ensure consistent navigation. Apple TV had only just released support for third party apps, so we had to adhere to very confined templates, meanwhile Fetch TV designs were mandated by Fetch themselves.
+</p>
+
+<p>To accomplish this, we performed a card sort to determine the best section hierarchy, mandating that this be applied to every platform for consistent navigation regardless of the page layout.<br>
+To prevent 'spoilers' we separated match content from news and results, while also implementing a unique 'show scores' feature for casual viewers who prefer to take a peek and see whether a match is worth watching.</p>
+
+<div class="content-50"><img src="img_gif.gif" class="image img_gif" alt="Optus Sport TV app"></div>
+
+<div class="content-50">
+<H2>Leveraging the Details</H2>
+
+<p>Each TV platform had its own advantages we leveraged to provide fans with a richer experience.
+For example, on Smart TVs such as Samsung and LG, there was no constraint in terms of visual elements such as the colour of tabs and backgrounds.
+This allowed us to create designs which were less template driven and more closely mirrored the UI design of the mobile platforms.
+Apple TV by contrast, was more limited in terms of structure but we were able to utilise parallax animation to make each match pop.</p>
+</div>
+
+
+</div>
+</div>
+
+
+<div class="section-light">
+<div class="content-light">
+
+
+
+<h1>iOS & ANDROID</h1><br>
+
+<p>Insights from the customer experience research highlighted mobile devices as the platform of choice to watch news, highlights and match replays in contrast to the TV platform which was reserved for the big 'game night'. Fans use mobile as a way to catch up on teams and games they are less invested in.
+Instead of watching the game they would often use mobile to get in depth match day statistics and results.</p>
+
+<p>Using TV navigation as a foundation, we structured the Android and iOS hierarchy the same but add extended deep dive results such as team & player rankings, table and match statistics to appeal to this type of user.</p>
+<p>Support for Chromecast and Airplay streaming were important additions to get extended content such as match replays and news to the big screen.</p>
+
+
+
+<div class="content-100"><img src="img_ios.png" class="child1 img_ios" alt="Optus Sport Mobile app"></div>
+
+</div>
+</div>
+
+
+
+<div class="section-dark">
+<div class="content-dark">
+
+<h1>RESPONSIVE WEB</h1><br>
+
+<p>Research showed that web was the most common platform for finding out English Premier League Results and extended statistics. However, 80% of this traffic was generated by mobile.
+
+The native mobile app already provided all these results, statistics and an optimised viewing experience for match day video. Viewing of any video content on mobile would be prioritised in-app as opposed to in-browser.
+However, as there was no desktop app  - for users on this platform, the experience should not be limited.</p>
+
+<div class="content-100"><img src="img_web.png" class="child1 img_web" alt="Optus Sport Wev"></div>
+
+
+<p>It was determined that fans who watch or look at EPL related content on laptop/desktop are multitasking 'power-users' who are simultaneously analysing, placing bets, chatting on social media and even sometimes watching multiple games or highlights in different tabs.<br>
+To make multitasking more engaging we employed picture in picture and 4 way streaming - so that die hard EPL fans could do this all in the one player window.</p>
+
+</div>
+</div>
+
+
+<div class="parallax"></div>
+
+
+<div class="section-light">
+<div class="content-light">
+
+<h1>THE SCORE</h1>
+
+<p>The Optus Sport suite was launched on time in July 2016, ready the English Premier League season.</p>
+
+<p>The high demand for the game, initially resulted in a mixed reception around Optus' ability to stream without interruption or loss of signal.</p>
+
+<p>Despite this, the Optus Sport app holds a four and a half star rating on the App Store (out of five). </p>
+
+<p>Positive feedback flourished around the design, navigation and features.
+The platform was a success for Optus and as a result was expanded to accomodate Cricket (The Ashes & BBL), the FIFA World Cup and the ICC Cup, with more sports expected in the pipeline.</p>
+
+</div>
+
+
+
+<a href="https://play.google.com/store/apps/details?id=au.com.optus.sport&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1" class="gplay"></a>
+
+
+<a href="https://itunes.apple.com/au/app/optus-sport/id1113368382?mt=8" class="appstore"></a>
+
+
+</div>
+</div>
+
+</body>
+
+</html>

@@ -1,0 +1,80 @@
+@media screen and (max-width: 766px) {
+
+.container {
+	max-width: 88%;
+	margin: 0 auto;
+	}	
+	
+	
+.box50 {
+	display: block;
+	width: 100%;
+}
+
+
+
+
+.icon {
+	min-width: 80px;
+}
+
+.device {
+	max-height: 400px;
+}
+
+.parallax {
+	min-height: 240px;
+	background-attachment: scroll;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.bg-hero {
+	background-position: right;
+}
+
+.gplay {
+	display:inline-block;
+	overflow:hidden;
+	background:url(images/googleplay.png) no-repeat;
+	background-size: contain;
+	background-position: center center;
+	min-width: 128px;
+	height: 64px;
+	margin:16px;
+}
+
+
+.appstore {
+	display:inline-block;
+	overflow:hidden;
+	background:url(images/appstore.png) no-repeat;
+	background-size: contain;
+	background-position: center center;
+	min-width: 128px;
+	height: 64px;
+	margin: 16px;
+}
+
+
+.flex_in {
+	max-height: 240px;
+}
+
+
+/*STATS*/
+
+.stat_cluster {
+	width: 100%;
+}
+
+}
+
+
+@media screen and (max-width: 322px) {
+
+
+
+
+}

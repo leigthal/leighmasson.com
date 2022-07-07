@@ -1,0 +1,697 @@
+<HTML>
+<head>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-41272215-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-41272215-2');
+</script>
+
+<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5N2KP6D');</script>
+<!-- End Google Tag Manager -->
+
+<style>
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,500,900');
+
+/* QUOTES */
+
+.quote_rotate {
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  margin: 0 auto;
+  width: 96%;
+  margin-bottom: 80px;
+  top: 0px;
+  opacity: 0;
+  -moz-opacity: 0;
+  filter:alpha(opacity=0);
+  line-height: 32px;
+  position: absolute;
+}
+
+
+.quote_box {
+	position: relative;
+}
+
+.placeholder{
+height: 420px;
+}
+
+
+.quote_heading {
+  font-size: 32px;
+}
+
+.quote {
+  font-size: 16px;
+}
+
+.author {
+  font-size: 16px;
+  font-style: italic;
+}
+
+
+/*QUOTE ANIMATION*/
+
+
+.quote_rotate:nth-child(1) {
+  -webkit-animation: quoteshift 40s 0s infinite linear;
+  -moz-animation: quoteshift 40s 0s infinite linear;
+  -ms-animation: quoteshift 40s 0s infinite linear;
+  -o-animation: quoteshift 40s 0s infinite linear;
+  animation: quoteshift 40s 0s infinite linear;
+}
+ 
+.quote_rotate:nth-child(2) {
+  -webkit-animation: quoteshift 40s 8s infinite linear;
+  -moz-animation: quoteshift 40s 8s infinite linear;
+  -ms-animation: quoteshift 40s 8s infinite linear;
+  -o-animation: quoteshift 40s 8s infinite linear;
+  animation: quoteshift 40s 8s infinite linear;
+}
+ 
+ 
+.quote_rotate:nth-child(3) {
+  -webkit-animation: quoteshift 40s 16s infinite linear;
+  -moz-animation: quoteshift 40s 16s infinite linear;
+  -ms-animation: quoteshift 40s 16s infinite linear;
+  -o-animation: quoteshift 40s 16s infinite linear;
+  animation: quoteshift 40s 16s infinite linear;
+}
+  
+  
+.quote_rotate:nth-child(4) {
+  -webkit-animation: quoteshift 40s 24s infinite linear;
+  -moz-animation: quoteshift 40s 24s infinite linear;
+  -ms-animation: quoteshift 40s 24s infinite linear;
+  -o-animation: quoteshift 40s 24s infinite linear;
+  animation: quoteshift 40s 24s infinite linear;
+}
+
+
+.quote_rotate:nth-child(5) {
+  -webkit-animation: quoteshift 40s 32s infinite linear;
+  -moz-animation: quoteshift 40s 32s infinite linear;
+  -ms-animation: quoteshift 40s 32s infinite linear;
+  -o-animation: quoteshift 40s 32s infinite linear;
+  animation: quoteshift 40s 32s infinite linear;
+}
+
+
+/* ^ HOW THIS WORKS 
+
+
+FOR EACH QUOTE, Above
+
+1. create a nth-child(x) with a new number in brackets.
+
+2. increase the delay (second XXs value) on the last child by an increment of 10 from the previous value 
+ie. if child 4 has delay value of 30 seconds, then child 5 will have a delay of 30 seconds, so it begins after child 4.
+
+3. increase the duration of all children (the first XXs value) by an increment of 10.
+
+
+FOR EACH QUOTE, below
+
+Keyframe animation as so
+
+100 percent / 5 quotes = 20% per quote.
+
+0% = start of animation -> 4% quote should be fully visible -> quote stays visible to 16% -> quote goes invisible by 20%
+
+For the remaining 80%, animation will stay dormant, waiting for the other animations to complete... this 80% is to ensure that animations don't overlap.
+
+*/
+
+
+
+   
+ 
+/*KEYFRAMES*/
+@keyframes "quoteshift" {
+ 0% {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+    opacity: 0;
+ }
+ 2% {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    filter: alpha(opacity=100);
+    opacity: 1;
+    display: block;
+ }
+ 18% {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    filter: alpha(opacity=100);
+    opacity: 1;
+    display: block;
+ }
+ 20% {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+    opacity: 0;
+ }
+ 100% {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+    opacity: 0;
+ }
+ 
+}
+ 
+@-moz-keyframes quoteshift {
+ 0% {
+   filter: alpha(opacity=0);
+   opacity: 0;
+ }
+ 2% {
+   filter: alpha(opacity=100);
+   opacity: 1;
+   display: block;
+ }
+ 18% {
+   filter: alpha(opacity=100);
+   opacity: 1;
+   display: block;
+ }
+ 20% {
+   filter: alpha(opacity=0);
+   opacity: 0;
+ }
+ 100% {
+   filter: alpha(opacity=0);
+   opacity: 0;
+ }
+ 
+}
+ 
+@-webkit-keyframes "quoteshift" {
+ 0% {
+   filter: alpha(opacity=0);
+   opacity: 0;
+ }
+2% {
+   filter: alpha(opacity=100);
+   opacity: 1;
+   display: block;
+ }
+18% {
+   filter: alpha(opacity=100);
+   opacity: 1;
+ }
+ 20% {
+   filter: alpha(opacity=0);
+   opacity: 0;
+ }
+ 100% {
+   filter: alpha(opacity=0);
+   opacity: 0;
+ }
+ 
+}
+ 
+@-ms-keyframes "quoteshift" {
+ 0% {
+   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+   filter: alpha(opacity=0);
+   opacity: 0;
+ }
+2% {
+   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+   filter: alpha(opacity=100);
+   opacity: 1;
+   display: block;
+ }
+18% {
+   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+   filter: alpha(opacity=100);
+   opacity: 1;
+   display: block;
+ }
+20% {
+   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+   filter: alpha(opacity=0);
+   opacity: 0;
+ }
+ 100% {
+   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+   filter: alpha(opacity=0);
+   opacity: 0;
+ }
+ 
+}
+ 
+@-o-keyframes "quoteshift" {
+0% {
+   filter: alpha(opacity=0);
+   opacity: 0;
+ }
+2% {
+   filter: alpha(opacity=100);
+   opacity: 1;
+   display: block;
+ }
+18% {
+   filter: alpha(opacity=100);
+   opacity: 1;
+   display: block;
+ }
+20% {
+   filter: alpha(opacity=0);
+   opacity: 0;
+ }
+ 100% {
+   filter: alpha(opacity=0);
+   opacity: 0;
+ }
+ 
+}
+
+
+
+</style>
+
+<!-- WP/Wordpress? Wix? Bootstrap? - No Thanks!...
+There are none of those tags here, because I believe the proof is in the pudding.
+
+I wrote this site from scratch, with a basic knowledge HTML/CSS, a lot of trial and error, failure and time on W3 schools. 
+Im not a front end developer, but I do believe in understanding basic web principles is key to being a good UI designer.
+
+Also, the most important thing to UX design?
+
+Empathy.
+
+I share some and understand developer pain points- what can and can't be done easily.
+If you have any questions about the construction of this site, I'd love to help out.
+
+-->
+
+
+<title>Leigh Masson - Optus Sport Case Study</title>
+
+
+<link rel="stylesheet" href="universal.css">
+<link rel="stylesheet" href="766.css">
+<link rel="stylesheet" href="1170.css">
+<link rel="stylesheet" href="1920.css">
+
+
+<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+
+
+</head>
+
+<body>
+
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5N2KP6D"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<div class="nav">
+	<a href="http://www.leighmasson.com/index.html" class="n_back"><div class="chevron"></div>Optus Sport</a>
+</div>
+
+<div class="section bg-navy">
+
+<div class="container txt_center txt_white">
+
+<h1>Designing a cross-platform experience</h1><br>
+
+<p>Goal posts are moving for telecommunications in Australia.</p> 
+<P>Optus want to extend their offering starting with the living room. 
+This lead to the controversial move of purchasing the EPL rights from Foxtel.</p>
+
+
+<p>The goal of the Optus Sport project was to create consistent cross platform experience that honours "the game" and pleased its strongest fans however they watched.
+
+</p><br>
+
+</div>
+
+
+<div class="container flex flex_in">
+	<h3 class="txt_white">Key Tools</h3>
+	<div class="break8"></div>
+	<div class="icon i_parallax"></div>
+	<div class="icon i_invision"></div>
+	<div class="icon i_photoshop"></div>
+	
+
+	<div class="break32"></div>
+</div>
+
+
+<div class="container flex_in">
+	<h3 class="txt_white">Key Skills</h3>
+	<div class="break8"></div>
+	<div class="tag">Cross-platform design</div>
+	<div class="tag">Data Driven Design</div>
+	<div class="tag">Material Design</div>
+	<div class="tag">Apple HIG</div>
+
+</div>
+
+</div>
+
+<div class="section parallax flex-end bg-hero">
+<div class="container txt_center txt_shadow">
+
+<h2>Challenges</h2><br>
+
+<p>Research showed that fans of the game often consumed EPL content across several platforms often simultaneously.</p>
+
+<p>This meant creating a suite of apps that leveraged each platform's strengths in a way that best served they way EPL fans watch the game</p>
+
+
+</div>
+
+</div>
+
+<div class="section">
+<div class="container txt_left">
+
+<div class="container flex no-wrap">
+	<img class="device" src="images/device/device_tv.png"></img>
+</div>
+
+<h2 class="txt_purple">Apple TV & Smart TV</h2><br>
+
+
+
+<p>Big games, means big screen.</p>
+
+<p>Due to the time difference, watching live often meant crashing in the lounge room of the one mate who had Foxtel!</p>
+
+<p>This underscored the importance of having Live games prominent on smart TVs and streaming devices first such as Apple TV, Google Chromecast and Fetch TV.</p>
+
+
+
+<div class="flex_out">
+
+	<div class="box50">
+			<div class="gif">
+				<div class="mask"></div>
+				<video autoplay loop playsinline src="images/gif.mp4" class="gif2"></video>	
+			</div>
+	</div>
+	
+	<div class="box50">
+	
+			<br>
+			
+			<strong>LEVERAGING THE DETAILS</strong>
+
+			<p>Each TV platform had its own advantages we leveraged to provide fans with a richer experience.
+			For example, on Smart TVs there was less UI constraints, so we were able to use more of the brand colours in the user interface's navigational elements, mirroring the brand identity seen on mobile platforms.</p>
+			
+			<p>Apple TV by contrast, was more limited to a template like navigational structure but we were able to utilise a layered 3D parallax effect to make each match 'pop'.</p>
+	</div>
+
+</div>
+
+<div class="flex_out">
+
+<h3 class="txt_purple">Apple TV & Smart TV Focus</h3>
+
+<div class="break8"></div>
+
+<ul class="box50 nobullet">
+	<li class="tick-purple">Live Games</li>
+	<li class="tick-purple">Replays & Mini matches</li>
+</ul>
+
+<ul class="box50 nobullet">
+	<li class="tick-purple">Support for device streaming</li>
+	<li class="tick-purple">Simple sign-in without signup</li>
+</ul>
+
+
+</div>
+
+</div>
+
+
+</div><!--/Container-->
+
+</div><!--/Section-->
+
+<div class="section bg-purple">
+<div class="container txt_left txt_white">
+
+
+<h2 class="txt_fluroblue">iOS & Android</h2><br>
+
+<p class="txt_white">Mobile was often used by fans as an accompaniment to the 'big screen' to review stats and highlights to understand how the teams compared and how their team fared.</p>
+<p>Mobile was also a popular platform for watching smaller match replays or games that didn't necessarily involve their favourite team</p>
+
+<p class="txt_white">Mobile added deep dive stats such as team & player rankings, table and match statistics. 
+To avoid spoilers, a simple show scores toggle was created to conceal these facts before watching a game.</p>
+
+<p class="txt_white">In addition to this, support for Chromecast and Airplay streaming were important additions to get this extended content such as match replays and news to the big screen.</p>
+
+<br>
+
+<div class="container flex no-wrap">
+	<img class="device" src="images/device/mobile_lineup.png"></img>
+	<img class="device" src="images/device/mobile_matches.png"></img>
+
+</div>
+
+
+
+
+<div class="flex_out">
+
+<h3 class="txt_fluroblue">Mobile Focus</h3>
+
+<div class="break8"></div>
+
+<ul class="box50 nobullet">
+	<li class="tick-fluroblue">Stats,  Lineups, highlights with 'no spoiler' toggle</li>
+	<li class="tick-fluroblue">chromecast and Airplay</li>
+</ul>
+
+<ul class="box50 nobullet">
+	<li class="tick-fluroblue">Live games, mini matches and commentary</li>
+	<li class="tick-fluroblue">In-App signup and personalisation</li>
+</ul>
+
+
+</div>
+
+
+
+</div><!--/Container-->
+
+</div><!--/Section-->
+
+
+
+<div class="section">
+<div class="container txt_left">
+
+<h2 class="txt_purple">Responsive Web</h2><br>
+
+<p>Like mobile, web was the most common platform for finding out English Premier League Results and extended statistics.</p>
+
+<p>The differentiation was that Laptop/desktop fans tended to use the platform to multitask, simultaneously analysing, placing bets, chatting on social media and even watching multiple games or highlights in different tabs.</p>
+
+
+<div class="container flex_in no-wrap">
+	<img class="device" src="images/device/laptop.png"></img>
+</div>
+	
+
+<div class="break32"></div>
+
+<p>A partnership with Vimmond allowed us to design picture in picture and 4 way streaming so that die hard EPL fans could do this all in the one player window.</p> <br>
+
+<div class="flex_out">
+
+<h3 class="txt_purple">Responsive Web Focus</h3>
+
+<div class="break8"></div>
+
+<ul class="box50 nobullet">
+	<li class="tick-purple">Picture in picture</li>
+	<li class="tick-purple">Fantasy football</li>
+</ul>
+
+<ul class="box50 nobullet">
+	<li class="tick-purple">Fandom & Social chat</li>
+	<li class="tick-purple">Live, Replays, Stats and Recaps.</li>
+</ul>
+
+
+</div>
+
+</div>
+
+
+</div><!--/Container-->
+
+</div><!--/Section-->
+
+
+	
+</div>
+
+
+<div class="section parallax bg-score">
+<div class="container">
+
+</div>
+</div>
+
+
+<div class="section bg-fluroblue">
+	<div class="container">
+		
+		<div class="quote_box flex">
+		
+		
+		<div class="quote_rotate">
+			<div class="flex no-wrap">
+			<img class="device" src="images/5star.png"></img>
+			</div><br>
+		  <span class="quote_heading">Sensational</span><br><br>
+		  <span class="quote">Well done OPTUS you have done a great job I love the soccer coverage and this App is really easy to use and I like how the scores are hidden and the mini match it's a great idea </span><br><br> 
+		  <span class="author">-Aviationbuff78, App Store</span>
+		</div>
+		
+		<div class="quote_rotate">
+			<div class="flex no-wrap">
+			<img class="device" src="images/5star.png"></img>
+			</div><br>
+		  <span class="quote_heading">Way better than Foxtel!</span><br><br> 
+		  <span class="quote">The app is fantastic. The ability to watch games that have already started by going back 3 hours is great for someone who can't always get up to watch live is perfect. The mini matches is a great addition as it gives you a good 20 minute snapshot.</span><br><br> 
+		  <span class="author">-Ferrari312t, App Store</span>
+		</div>
+		
+		<div class="quote_rotate">
+			<div class="flex no-wrap">
+			<img class="device" src="images/5star.png"></img>
+			</div><br>
+			<span class="quote_heading">Effortless</span><br><br> 
+		  <span class="quote">Well layed out app,works with Chromecast effortlessly</span><br><br> 
+		  <span class="author">-Michael Backvall, Google Play</span>
+		</div>
+		
+		<div class="quote_rotate">
+			<div class="flex no-wrap">
+			<img class="device" src="images/5star.png"></img>
+			</div><br>
+		  <span class="quote_heading">Innovative</span><br><br> 
+		  <span class="quote">Lots of content, intuitive UI. Really like the 'mini-matches' which is like an extended highlights in 24 minutes. I find it ideal when I've missed the live game the previous day. Also a good thing is that scores are not mentioned in the video titles. So if you are careful enough, you can watch the mini match without knowing the result in advance.
+</span><br><br> 
+		  <span class="author">-Varun Menon, Google Play</span>
+		</div>
+		
+		
+		<div class="quote_rotate">
+			<div class="flex no-wrap">
+			<img class="device" src="images/5star.png"></img>
+			</div><br>
+		  <span class="quote_heading">Highly recommend</span><br><br> 
+		  <span class="quote">Was an avid Foxtel supporter and vowed not to get Optus Sport in protest. So glad I buckled. Hope Foxtel don't get the rights back for the EPL to be honest. Love how simple this app is and love the different formats of viewing the matches (mini matches etc). 
+</span><br><br> 
+		  <span class="author">-Regan Betteridge, Google Play</span>
+		</div>
+		
+		
+		
+		<div class="placeholder"></div>
+		
+		
+</div><!--/quotebox-->
+
+
+</div><!--/Container-->
+
+</div><!--/Section-->
+
+
+
+<div class="section bg-purple">
+<div class="container txt_left txt_white">
+
+<h2>The Score</h2><br>
+
+<p>The Optus Sport suite was launched on time in July 2016, ready the English Premier League season and was in high demand.</p>
+
+<p>The platform was a success for Optus and has expanded to accomodate Cricket (The Ashes & BBL), the FIFA World Cup and the ICC Cup with more sports expected in the pipeline.</p><br>
+
+
+
+<br>
+
+
+<div class="stats">
+
+<h3>2018 - 2019 Optus Sport Stats</h3>
+
+<div class="break32"></div>
+
+	<dev class="stat_cluster">
+		<dev class="stat_figure">1,100</dev>
+		<dev class="stat_line">Matches streamed</dev>		
+	</dev>
+	
+	<dev class="stat_cluster">
+		<dev class="stat_figure">3000</dev>
+		<dev class="stat_line">Hours watched</dev>		
+	</dev>
+	
+	<dev class="stat_cluster">
+		<dev class="stat_figure">15+ Million</dev>
+		<dev class="stat_line">Social Media Followers</dev>		
+	</dev>
+</div>
+
+
+</div>
+
+
+<div class="flex_in">
+<a href="https://play.google.com/store/apps/details?id=au.com.optus.sport&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1" alt="Get it on Google Play" class="gplay"></a>
+<a href="https://itunes.apple.com/au/app/optus-sport/id1113368382?mt=8" alt="Download from App Store" class="appstore"></a>
+</div>
+
+</div>
+
+
+
+
+    
+    
+</div>
+
+
+
+
+<div class="footer">(C) Leigh Masson 2019</div>
+ 
+
+</div><!--/Page-->
+
+
+
+<script src="parallax.js"></script>
+
+</body>
+</HTML>

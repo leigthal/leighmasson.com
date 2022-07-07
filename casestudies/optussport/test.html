@@ -1,0 +1,397 @@
+<HTML>
+<head>
+
+<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+
+<style>
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,500,900');
+
+
+
+/* QUOTES */
+
+.quote_rotate {
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  margin: 0 auto;
+  width: 80%;
+  margin-top: 80px;
+  margin-bottom: 80px;
+  top: 0px;
+  opacity: 0;
+  -moz-opacity: 0;
+  filter:alpha(opacity=0);
+  line-height: 32px;
+  position: absolute;
+}
+
+
+.quote_box {
+	position: relative;
+  overflow: hidden;
+}
+
+.placeholder{
+font-size: 48px;
+	opacity: 0;
+	position: relative;
+	  -moz-opacity: 0;
+  filter:alpha(opacity=0);
+}
+
+
+.quote_heading {
+  font-size: 40px;
+}
+
+.quote {
+  font-size: 24px;
+}
+
+.author {
+  font-size: 20px;
+  font-style: italic;
+}
+
+
+/*QUOTE ANIMATION*/
+
+
+.quote_rotate:nth-child(1) {
+  -webkit-animation: quoteshift 50s 0s infinite linear;
+  -moz-animation: quoteshift 50s 0s infinite linear;
+  -ms-animation: quoteshift 50s 0s infinite linear;
+  -o-animation: quoteshift 50s 0s infinite linear;
+  animation: quoteshift 50s 0s infinite linear;
+}
+ 
+.quote_rotate:nth-child(2) {
+  -webkit-animation: quoteshift 50s 10s infinite linear;
+  -moz-animation: quoteshift 50s 10s infinite linear;
+  -ms-animation: quoteshift 50s 10s infinite linear;
+  -o-animation: quoteshift 50s 10s infinite linear;
+  animation: quoteshift 50s 10s infinite linear;
+}
+ 
+ 
+.quote_rotate:nth-child(3) {
+  -webkit-animation: quoteshift 50s 20s infinite linear;
+  -moz-animation: quoteshift 50s 20s infinite linear;
+  -ms-animation: quoteshift 50s 20s infinite linear;
+  -o-animation: quoteshift 50s 20s infinite linear;
+  animation: quoteshift 50s 20s infinite linear;
+}
+  
+  
+.quote_rotate:nth-child(4) {
+  -webkit-animation: quoteshift 50s 30s infinite linear;
+  -moz-animation: quoteshift 50s 30s infinite linear;
+  -ms-animation: quoteshift 50s 30s infinite linear;
+  -o-animation: quoteshift 50s 30s infinite linear;
+  animation: quoteshift 50s 30s infinite linear;
+}
+
+
+.quote_rotate:nth-child(5) {
+  -webkit-animation: quoteshift 50s 40s infinite linear;
+  -moz-animation: quoteshift 50s 40s infinite linear;
+  -ms-animation: quoteshift 50s 40s infinite linear;
+  -o-animation: quoteshift 50s 40s infinite linear;
+  animation: quoteshift 50s 40s infinite linear;
+}
+
+
+/* ^ HOW THIS WORKS 
+
+
+FOR EACH QUOTE, Above
+
+1. create a nth-child(x) with a new number in brackets.
+
+2. increase the delay (second XXs value) on the last child by an increment of 10 from the previous value 
+ie. if child 4 has delay value of 30 seconds, then child 5 will have a delay of 30 seconds, so it begins after child 4.
+
+3. increase the duration of all children (the first XXs value) by an increment of 10.
+
+
+FOR EACH QUOTE, below
+
+Keyframe animation as so
+
+100 percent / 5 quotes = 20% per quote.
+
+0% = start of animation -> 4% quote should be fully visible -> quote stays visible to 16% -> quote goes invisible by 20%
+
+For the remaining 80%, animation will stay dormant, waiting for the other animations to complete... this 80% is to ensure that animations don't overlap.
+
+*/
+
+
+
+   
+ 
+/*KEYFRAMES*/
+@keyframes "quoteshift" {
+ 0% {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+    opacity: 0;
+ }
+ 2% {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    filter: alpha(opacity=100);
+    opacity: 1;
+    display: block;
+ }
+ 18% {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    filter: alpha(opacity=100);
+    opacity: 1;
+    display: block;
+ }
+ 20% {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+    opacity: 0;
+ }
+ 100% {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+    opacity: 0;
+ }
+ 
+}
+ 
+@-moz-keyframes quoteshift {
+ 0% {
+   filter: alpha(opacity=0);
+   opacity: 0;
+ }
+ 2% {
+   filter: alpha(opacity=100);
+   opacity: 1;
+   display: block;
+ }
+ 18% {
+   filter: alpha(opacity=100);
+   opacity: 1;
+   display: block;
+ }
+ 20% {
+   filter: alpha(opacity=0);
+   opacity: 0;
+ }
+ 100% {
+   filter: alpha(opacity=0);
+   opacity: 0;
+ }
+ 
+}
+ 
+@-webkit-keyframes "quoteshift" {
+ 0% {
+   filter: alpha(opacity=0);
+   opacity: 0;
+ }
+2% {
+   filter: alpha(opacity=100);
+   opacity: 1;
+   display: block;
+ }
+18% {
+   filter: alpha(opacity=100);
+   opacity: 1;
+ }
+ 20% {
+   filter: alpha(opacity=0);
+   opacity: 0;
+ }
+ 100% {
+   filter: alpha(opacity=0);
+   opacity: 0;
+ }
+ 
+}
+ 
+@-ms-keyframes "quoteshift" {
+ 0% {
+   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+   filter: alpha(opacity=0);
+   opacity: 0;
+ }
+2% {
+   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+   filter: alpha(opacity=100);
+   opacity: 1;
+   display: block;
+ }
+18% {
+   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+   filter: alpha(opacity=100);
+   opacity: 1;
+   display: block;
+ }
+20% {
+   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+   filter: alpha(opacity=0);
+   opacity: 0;
+ }
+ 100% {
+   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+   filter: alpha(opacity=0);
+   opacity: 0;
+ }
+ 
+}
+ 
+@-o-keyframes "quoteshift" {
+0% {
+   filter: alpha(opacity=0);
+   opacity: 0;
+ }
+2% {
+   filter: alpha(opacity=100);
+   opacity: 1;
+   display: block;
+ }
+18% {
+   filter: alpha(opacity=100);
+   opacity: 1;
+   display: block;
+ }
+20% {
+   filter: alpha(opacity=0);
+   opacity: 0;
+ }
+ 100% {
+   filter: alpha(opacity=0);
+   opacity: 0;
+ }
+ 
+}
+
+</style>
+
+<!-- WP/Wordpress? Wix? Bootstrap? - No Thanks!...
+There are none of those tags here, because I believe the proof is in the pudding.
+
+I wrote this site from scratch, with a basic knowledge HTML/CSS, a lot of trial and error, failure and time on W3 schools. 
+Im not a front end developer, but I do believe in understanding basic web principles is key to being a good UI designer.
+
+Also, the most important thing to UX design?
+
+Empathy.
+
+I share some and understand developer pain points- what can and can't be done easily.
+If you have any questions about the construction of this site, I'd love to help out.
+
+-->
+
+
+
+
+
+<title>Leigh Masson Creative</title>
+
+
+<link rel="stylesheet" href="universal.css">
+<link rel="stylesheet" href="766.css">
+<link rel="stylesheet" href="1170.css">
+<link rel="stylesheet" href="1920.css">
+
+
+<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+
+
+</head>
+
+<body>
+
+
+<div class="section bg-navy">
+</div>
+
+<div class="section bg-fluroblue">
+	<div class="container">
+		
+		<div class="quote_box flex">
+		
+		
+		<div class="quote_rotate">
+			<div class="flex no-wrap">
+			<img class="device" src="images/5star.png"></img>
+			</div><br>
+		  <span class="quote_heading">Sensational</span><br><br>
+		  <span class="quote">Well done OPTUS you have done a great job I love the soccer coverage and this App is really easy to use and I like how the scores are hidden and the mini match it's a great idea </span><br><br> 
+		  <span class="author">-Aviationbuff78, App Store</span>
+		</div>
+		
+		<div class="quote_rotate">
+			<div class="flex no-wrap">
+			<img class="device" src="images/5star.png"></img>
+			</div><br>
+		  <span class="quote_heading">Way better than Foxtel!</span><br><br> 
+		  <span class="quote">The app is fantastic. The ability to watch games that have already started by going back 3 hours is great for someone who can't always get up to watch live is perfect. The mini matches is a great addition as it gives you a good 20 minute snapshot.</span><br><br> 
+		  <span class="author">-Ferrari312t, App Store</span>
+		</div>
+		
+		<div class="quote_rotate">
+			<div class="flex no-wrap">
+			<img class="device" src="images/5star.png"></img>
+			</div><br>
+			<span class="quote_heading">Effortless</span><br><br> 
+		  <span class="quote">Well layed out app,works with Chromecast effortlessly</span><br><br> 
+		  <span class="author">-Michael Backvall, Google Play</span>
+		</div>
+		
+		<div class="quote_rotate">
+			<div class="flex no-wrap">
+			<img class="device" src="images/5star.png"></img>
+			</div><br>
+		  <span class="quote_heading">Innovative</span><br><br> 
+		  <span class="quote">Lots of content, intuitive UI. Really like the 'mini-matches' which is like an extended highlights in 24 minutes. I find it ideal when I've missed the live game the previous day. Also a good thing is that scores are not mentioned in the video titles. So if you are careful enough, you can watch the mini match without knowing the result in advance.
+</span><br><br> 
+		  <span class="author">-Varun Menon, Google Play</span>
+		</div>
+		
+		
+		<div class="quote_rotate">
+			<div class="flex no-wrap">
+			<img class="device" src="images/5star.png"></img>
+			</div><br>
+		  <span class="quote_heading">Highly recommend</span><br><br> 
+		  <span class="quote">Was an avid Foxtel supporter and vowed not to get Optus Sport in protest. So glad I buckled. Hope Foxtel don't get the rights back for the EPL to be honest. Love how simple this app is and love the different formats of viewing the matches (mini matches etc). 
+</span><br><br> 
+		  <span class="author">-Regan Betteridge, Google Play</span>
+		</div>
+		
+		
+		
+		<div class="placeholder"><p>Lots of content, intuitive UI. Really like the 'mini-matches' which is like an extended highlights in 24 minutes. I find it ideal when i've missed the live game the previous day. Also a good thing is that scores are not mentioned in the video titles. So if you are careful enough, you can watch the mini match without knowing the result in advance.ots of content, intuitive UI.Also a good thing is that scores are not mentioned in the video titles. So if you are careful enough, you can watch the mini match without knowing the result in advance.ots of content, intuitive UI</p>
+
+-Varun Menon, Google Play</div>
+		
+		
+</div><!--/quotebox-->
+
+
+</div><!--/Container-->
+
+</div><!--/Section-->
+
+</div>
+
+
+
+<div class="footer">(C) Leigh Masson 2019</div>
+ 
+
+</div><!--/Page-->
+
+
+
+<script src="parallax.js"></script>
+
+</body>
+</HTML>
