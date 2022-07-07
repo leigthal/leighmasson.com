@@ -408,21 +408,21 @@ color: white;
 
 /* Hover of linkedin icon - lights up*/
 .linkedin:hover {
-   background:url(http://www.leighmasson.com/images/social/icn_colour_linkedin.png); 
+   background:url(images/social/icn_colour_linkedin.png); 
    background-size: contain;
    cursor: hand;
 }
 
 /* Hover of dribbble icon - lights up*/
 .dribbble:hover {
-   background:url(http://www.leighmasson.com/images/social/icn_colour_dribbble.png); 
+   background:url(images/social/icn_colour_dribbble.png); 
    background-size: contain;
    cursor: hand;
 }
 
 /* Hover of medium icon - lights up*/
 .medium:hover {
-   background:url(http://www.leighmasson.com/images/social/icn_colour_medium.png); 
+   background:url(images/social/icn_colour_medium.png); 
    background-size: contain;
    cursor: hand;
 }
