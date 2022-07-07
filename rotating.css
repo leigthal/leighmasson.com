@@ -1,0 +1,47 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:600);
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap');
+
+
+.rotating-text {
+	width: 80%;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600;
+  font-size: 40px;
+  text-align: left;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.experience {
+	padding-right: 8px;
+}
+
+.rotating-text .experience {
+  margin: 0;
+  vertical-align: top;
+  margin-right: 8px;
+}
+.rotating-text .experience .pretext {
+  font-size: 16px;
+  color: red;
+}
+.rotating-text .experience .word {
+  position: absolute;
+  display: flex;
+  opacity: 0;
+}
+.rotating-text .experience .word .letter {
+  transform-origin: center center 25px;
+}
+.rotating-text .experience .word .letter.out {
+  transform: rotateX(90deg);
+  transition: 0.32s cubic-bezier(0.6, 0, 0.7, 0.2);
+}
+.rotating-text .experience .word .letter.in {
+  transition: 0.38s ease;
+}
+.rotating-text .experience .word .letter.behind {
+  transform: rotateX(-90deg);
+}
