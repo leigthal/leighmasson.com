@@ -1,0 +1,639 @@
+html, body {
+	margin: 0px !important;
+	padding: 0px !important;
+	background: white;
+	width: 100%;
+	text-align: center;	
+	font-family: Roboto, Montserrat, sans-serif;
+	overflow-x: hidden;
+}
+
+p {
+    font-weight: 300;
+    color: #666666;
+}
+
+h3 {
+    font-weight: 500;
+}
+
+.client {
+	height: intrinsic;
+}
+
+a {
+  text-decoration: none; /* no underline */
+}
+
+strong {
+	font-weight: 600;
+}
+
+.bg-black {
+	background: black;
+}
+
+.bg-gradient {
+	background:-webkit-linear-gradient(#f8f8f8 0%, #ffffff 8%);
+}
+
+
+
+.txt_left {
+	position: relative;
+	margin: 0 auto;
+	text-align: left;
+}
+
+
+.txt_center {
+	position: relative;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.txt_white {
+	color: #ffffff;
+}
+
+.txt_black {
+	color: #000000;
+}
+
+
+.txt_yellow {
+  color: #E5CC58;
+}
+
+.txt_teal {
+  color: #00A1AE;
+}
+
+.txt_purple {
+  color: #9013FE;
+}
+
+.txt_pink {
+  color: #FF467C;
+}
+
+.txt_fluroblue {
+	color: #06EAFB;
+}
+
+.image {
+  display: block;
+  visibility: hidden;
+  width: 100%;
+  height: auto;
+}
+
+
+.section {
+	width: 100%;
+	text-align: center;
+	padding-top: 48px;
+	padding-bottom: 48px;
+	}
+
+.parallax {
+position: absolute;
+  margin: 0% auto;
+  padding: 0 !important;
+  width: 100%;
+  display: inline-block;
+  overflow: hidden;
+}
+
+
+.parallax-layer {
+  padding: 0 !important;
+  background-size: contain;
+  background-repeat: no-repeat;
+position: absolute;
+}
+
+
+
+.container {
+	margin: 0 auto;
+	max-width: 1280px;
+	}	
+	
+.flex {
+	display: flex;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+}
+
+
+
+.overlay {
+	width: 100%;
+	height: 64px;
+	line-height: 32px;
+	color: white;
+	font-size: 16px;
+	text-align: left;
+	font-weight: 300;
+	padding: 16px;
+}
+
+.i1 {
+	background: url("http://www.leighmasson.com/images/portfolio/one.png");
+	background-size: cover;
+	background-position: center center;
+}
+
+.i2 {
+	background: url("http://www.leighmasson.com/images/portfolio/two.png");
+	background-size: cover;
+	background-position: right top;
+}
+
+.i3 {
+	background: url("http://www.leighmasson.com/images/portfolio/three.png");
+	background-size: cover;
+	background-position: right top;
+}
+
+.i4 {
+	background: url("http://www.leighmasson.com/images/portfolio/four.png");
+	background-size: cover;
+	background-position: right top;
+}
+
+
+.page {
+position: relative;
+  margin: 0 auto;
+  margin-top: 0%;
+  width: 100%;
+  z-index: 18;
+  text-align: center;
+  height: auto !important;
+}
+
+
+
+.text-intro {
+	position: relative;
+	margin: 0 auto;
+	text-align: left;
+	z-index:999;
+}
+
+
+/* UNIVERSAL PARALLAX SETTINGS */
+
+
+
+/* Green */
+.layer-1 {
+	background-image:url(images/1-plax.png);
+	z-index: 1;
+	}
+
+/* Purple */
+.layer-2 {
+	background-image:url(images/2-plax.png);
+	z-index: 2;
+}
+
+/* light purple*/
+.layer-3 {
+	background-image:url(images/3-plax.png);
+	z-index: 3;
+}
+
+/* red*/
+.layer-4 {
+	background-image:url(images/4-plax.png);
+	z-index: 4;
+}
+
+/*turqoise*/
+.layer-5 {
+	background-image:url(images/5-plax.png);
+	z-index: 5;
+}
+
+/*lightblue*/
+.layer-6 {
+	background-image:url(images/6-plax.png);
+	z-index: 6;
+}
+
+/*Macbook*/
+.layer-7 {
+	background-image:url(images/7-plax.png);
+	z-index: 7;
+}
+
+/*iPad*/
+.layer-8 {
+	background-image:url(images/8-plax.png);
+	z-index: 8;
+}
+
+/*light blue*/
+.layer-9 {
+	background-image:url(images/9-plax.png);
+	z-index: 9;
+}
+
+/*Phone*/
+.layer-10 {
+	background-image:url(images/10-plax.png);
+	z-index: 10;
+}
+
+/*Pink*/
+.layer-11 {
+	background-image:url(images/11-plax.png);
+	z-index: 11;
+}
+
+/*storm blue*/
+.layer-12 {
+	background-image:url(images/12-plax.png);
+	z-index: 12;
+}
+
+/*pink*/
+.layer-13 {
+	background-image:url(images/13-plax.png);
+	z-index: 13;
+}
+
+/*watch*/
+.layer-14 {
+	background-image:url(images/14-plax.png);
+	z-index: 14;
+}
+
+/*deep purple*/
+.layer-15 {
+	background-image:url(images/15-plax.png);
+	z-index: 15;
+}
+
+/*cyan*/
+.layer-16 {
+	background-image:url(images/16-plax.png);
+	z-index: 19;
+}
+
+/*white block */
+.layer-block {
+	background-size: cover;
+	background-color: white;
+	width: 100%;
+	z-index: 17;
+}
+
+/*imac*/
+.layer-17 {
+	background-image:url(images/imac.png);
+	z-index:  800;
+	max-width: 640px;
+}
+
+.layer-18 {
+	z-index: 20;
+}
+
+
+.container_social {
+  width: 100%;
+  max-width: 1280px;
+  margin: 64px auto;
+  height: 240px;
+  position: absolute;
+  display: flex;
+  flex-wrap: wrap-reverse;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  padding-top: 64px;
+  z-index: 32;
+}
+
+.linkedin {
+  height:64px;
+  width: 64px;
+  background:url(http://www.leighmasson.com/images/social/icn_white_linkedin.png);
+  background-size: contain;
+  margin: 16px;
+}
+
+.dribbble {
+  height:64px;
+  width: 64px;
+  background:url(http://www.leighmasson.com/images/social/icn_white_dribbble.png);
+  background-size: contain;
+  margin: 16px;
+}
+
+.medium {
+  height:64px;
+  width: 64px;
+  background:url(http://www.leighmasson.com/images/social/icn_white_medium.png);
+  background-size: contain;
+  margin: 16px;
+}
+
+/* Default Styling for every word...*/
+.word {
+  min-height: 40px;
+  font-size: 40px;
+  font-weight: 600;
+  padding-right: 8px;
+}
+
+/* Styling for each word...*/
+
+.w_withme {
+display: block;
+color: white;
+}
+
+
+.w_linked {
+  display: none;
+  text-align: right;
+  background: #0274B3;
+  color: black;
+}
+
+
+.w_dribbble {
+  display: none;
+  text-align: right;
+  background: #E74D89;
+  color: black;
+  mix-blend-mode: screen;
+}
+
+
+.w_medium {
+  display: none;
+  text-align: right;
+  background: #02B875;
+  color: black;
+}
+
+
+.w_connect {
+  color: white;
+  display: block;
+  text-align: right;
+}
+
+/* Hover of linkedin icon - linked in word shows*/
+.linkedin:hover ~ .w_linked {
+    display: block;
+}
+
+/* Hover of dribbble icon - dribbble word shows*/
+.dribbble:hover ~ .w_dribbble {
+    display: block;
+}
+
+/* Hover of medium icon - medium word shows*/
+.medium:hover ~ .w_medium {
+    display: block;
+}
+
+
+/* Hover of linkedin icon - lights up*/
+.linkedin:hover {
+   background:url(http://www.leighmasson.com/images/social/icn_colour_linkedin.png); 
+   background-size: contain;
+   cursor: hand;
+}
+
+/* Hover of dribbble icon - lights up*/
+.dribbble:hover {
+   background:url(http://www.leighmasson.com/images/social/icn_colour_dribbble.png); 
+   background-size: contain;
+   cursor: hand;
+}
+
+/* Hover of medium icon - lights up*/
+.medium:hover {
+   background:url(http://www.leighmasson.com/images/social/icn_colour_medium.png); 
+   background-size: contain;
+   cursor: hand;
+}
+
+
+/* Hover of Linkedin icon - Hides word 'connected'*/
+.linkedin:hover ~ .w_connect {
+    display: none;
+}
+
+/* Hover of Dribbble icon - Hides word 'connected'*/
+.dribbble:hover ~ .w_connect {
+    display: none;
+}
+
+/* Hover of Medium icon - Hides word 'connected'*/
+.medium:hover ~ .w_connect {
+    display: none;
+}
+
+.break {
+  flex-basis: 100%;
+  height: 32px;
+}
+
+.break64 {
+  flex-basis: 100%;
+  height: 64px;
+}
+
+
+.footer {
+	padding-top: 16px;
+	padding-bottom: 16px;
+	flex-basis: 100%;
+	color: #cccccc;
+}
+
+
+
+/* CASE STUDIES */
+
+:root {
+  --bg-color-optus: #06EEFFCC;
+  --bg-color-incent: #0064FFCC;
+  --bg-color-mailplus: #018675CC;
+  --bg-color-asos: #712DCCCC; 
+  --bg-url-optus: url(http://www.leighmasson.com/images/portfolio/two.png);
+  --bg-url-incent: url(http://www.leighmasson.com/images/portfolio/three.png); 
+  --bg-url-mailplus: url(http://www.leighmasson.com/images/portfolio/one.png);
+  --bg-url-asos: url(http://www.leighmasson.com/images/portfolio/four.png); 
+}
+
+
+body {
+  font-family: Roboto, Montserrat, sans-serif;
+}
+
+.container {
+	margin: 0 auto;
+	max-width: 1280px;
+	}	
+	
+.flex {
+	display: flex;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+}
+
+.card
+{
+  position: relative;
+  height: 320px;
+  margin: 1%;
+  overflow: hidden; 
+  display: flex;
+  align-items: flex-end;
+}
+
+
+
+
+
+#c_optus
+{
+  background-image: var(--bg-url-optus);
+}
+
+#o_optus.overlay
+{
+  transition: background 2s;
+}
+
+#c_incent
+{
+  background-image: var(--bg-url-incent);
+}
+
+#o_incent.overlay
+{
+  transition: background 2s;
+}
+
+
+#c_asos
+{
+  background-image: var(--bg-url-asos);
+}
+
+#o_asos.overlay
+{
+  transition: background 2s;
+}
+
+
+#c_mailplus
+{
+  background-image: var(--bg-url-mailplus);
+}
+
+#o_mailplus.overlay
+{
+  transition: background 2s;
+}
+
+.zoom
+{
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  transition: all 1s ease;
+  background-repeat: no repeat;
+  background-position: top right;
+}
+
+.overlay {
+  position: absolute;
+  margin: 0 auto;
+  width: 96%;
+  height: 100%;
+  z-index: 3;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 2s;
+}
+
+
+.paine {
+  position: absolute;
+  background: rgba(0,0,0,0);
+  color: white;
+  width: 100%;
+  text-align: left;
+  margin-bottom: 0px;
+  z-index: 4;
+  padding: 8px;
+  line-height: 28px;
+  transition: background 1s;
+}
+
+.view {
+  color: white;
+  border: 2px solid white;
+  padding: 16px;
+  opacity: 0;
+  text-transform: uppercase;
+  transition: opacity 1s;
+}
+
+a:hover {
+  cursor: pointer;
+}
+
+a:hover .zoom
+{
+  transform: scale(1.08);
+  z-index: 1;
+}
+
+a:hover #o_optus.overlay
+{
+  background: var(--bg-color-optus);
+}
+
+a:hover #o_incent.overlay
+{
+  background: var(--bg-color-incent);
+}
+
+
+a:hover #o_asos.overlay
+{
+  background: var(--bg-color-asos);
+}
+
+
+
+a:hover #o_mailplus.overlay
+{
+  background: var(--bg-color-mailplus);
+}
+
+a:hover .view
+{
+  opacity: 1;
+}
+
+
+
+
+
