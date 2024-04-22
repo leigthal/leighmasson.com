@@ -1,0 +1,176 @@
+@media screen and (max-width: 1170px) and (min-width: 766px) {
+
+
+.container {
+	max-width: 80%;
+	margin: 0 auto;
+	}	
+
+.box50 {
+	/*display: block;*/
+	width: 100%;
+}
+
+.order_a_image {
+	order: 1;
+}
+
+.order_a_text {
+	order: 2;
+}
+
+
+.order_b_image {
+	order: 2;
+}
+
+.order_b_text {
+	order: 1;
+}
+
+.icon {
+	min-width: 128px;
+}
+
+
+.device_container {
+  transform: scale(0.88,0.88);
+}
+
+.landscape {
+ transform: scale(0.72,0.72) rotate(90deg);
+ }
+
+.shadow_airpods {
+  height:160px;
+  width: 156px;
+  position: absolute;
+  margin-top: 440px;
+  margin-left: -200px;
+}
+
+.device_airpods {
+  margin-top: -40px;
+  height:200px;
+  width: 156px;
+  background: url(http://www.leighmasson.com/casestudies/virgin/images/device/airpods.png);
+  background-size: 100% 100%;
+}
+
+
+.gplay {
+	display:inline-block;
+	overflow:hidden;
+	background:url(images/googleplay.png) no-repeat;
+	background-size: contain;
+	background-position: center center;
+	min-width: 160px;
+	height: 64px;
+	margin:16px;
+}
+
+
+.appstore {
+	display:inline-block;
+	overflow:hidden;
+	background:url(images/appstore.png) no-repeat;
+	background-size: contain;
+	background-position: center center;
+	min-width: 160px;
+	height: 64px;
+	margin: 16px;
+}
+
+.stat_cluster {
+	width: 48%;
+}
+
+
+/* MENU */
+
+.nav-desktop {
+    display: none;
+  }
+
+  .menu-item {
+    margin: 0 auto;
+    height: 64px;
+    line-height: 80px;
+    padding-left: 32px;
+    font-size: 16px;
+  }
+
+  .nav-mobile a:not(:first-child) {
+    display: none;
+  }
+
+  .nav-mobile a.icon {
+    float: right;
+    display: block;
+  }
+  
+ 
+
+  .nav-mobile {
+  height: 64px;
+    overflow: hidden;
+    background: white;
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+
+  }
+  
+  .navicon {
+  	height: 64px;
+	  display: flex;
+	  flex-direction: column;
+	  align-items: flex-end;
+	  justify-content:center;
+	  position: absolute;
+
+	      width: 96%;
+    padding-right:16px;
+    padding-left: 16px;
+	  
+  }
+
+  .nav-mobile a {
+    float: left;
+    display: block;
+
+    text-align: center;
+    text-decoration: none;
+  }
+
+  .nav-mobile a:hover {
+    color: red;
+  }
+
+  .nav-mobile a.active {
+    color: purple;
+  }
+
+  .nav-mobile.responsive {
+    height: 100vh;
+    background: white;
+  }
+
+
+
+  .nav-mobile.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .nav-mobile.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  
+}
+
+
+

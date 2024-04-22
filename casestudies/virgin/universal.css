@@ -1,0 +1,972 @@
+/*html, body {
+	/* margin: 0px !important; 
+	padding: 0px !important;
+	background: white;
+	width: 100%;
+	text-align: center;	
+	font-family: Helvetica Neue, Helvetica, Roboto, Montserrat, sans-serif;
+	overflow-x: hidden;
+}*/
+
+main { 
+	overflow-x: hidden;
+}
+
+p {
+    font-weight: 350;
+    line-height: 24px;
+    font-size: 18px;
+}
+
+
+h1 {
+	font-size: 48px;
+	font-weight: 600;
+}
+
+h2 {
+	font-size: 40px;
+	font-weight: 600;
+}
+
+h3 {
+    font-weight: 450;
+    width: 100%;
+    line-height: 32px;
+}
+
+
+
+ul.nobullet {
+list-style-type: none;
+padding: 0;
+margin: 0;
+}
+
+li {
+	font-size: 18px;
+	font-weight: 350;
+	line-height: 32px;
+	padding-left: 40px;
+}
+
+li.tick-fluroblue {
+background: url(images/icn-tick_blue.png) no-repeat left top;
+background-size: contain;
+height: 32px;
+
+}
+
+li.tick-white {
+background: url(images/icn-tick_blue.png) no-repeat left top;
+background-size: contain;
+height: 32px;
+
+}
+
+li.tick-purple {
+background: url(images/icn-tick_purple.png) no-repeat left top;
+background-size: contain;
+height: 32px;
+
+}
+
+li.tick-black {
+background: url(images/tick.png) no-repeat left top;
+background-size: 40px;
+min-height: 40px;
+
+}
+
+.client {
+	height: intrinsic;
+}
+
+a {
+  text-decoration: none; /* no underline */
+}
+
+strong {
+	font-weight: 800;
+}
+
+.bg-black {
+	background: black;
+}
+
+	
+.bg-purple {
+	background: #8800FF;
+}
+
+.bg-paper {
+	background: #FEE8E8;
+}
+
+.bg-white {
+	background: #ffffff;
+}
+
+.bg-aubergine {
+	background: #51465A;
+}
+
+.quote {
+	color: #ffffff;
+	font-size: 28px;
+	line-height: 40px;
+}
+
+
+
+.bg-gradient2 {
+	background:-webkit-linear-gradient(#8800FF, #E10A0B);
+}
+
+.bg-gradient {
+	background:-webkit-linear-gradient(#f8f8f8 0%, #ffffff 8%);
+}
+
+.bg-gym {
+	background:url(images/workout/gym.jpg);
+}
+
+.bg-strength2 {
+	background:url(images/workout/strength2.jpg);
+}
+
+
+.bg-crunches {
+	background:url(images/workout/crunches.jpg);
+}
+
+.bg-buddies {
+	background:url(images/workout/buddies.jpg);
+}
+
+.bg-sweat {
+	background:url(images/workout/sweat.jpg);
+}
+
+.bg-runner {
+	background:url(images/workout/runner.jpg);
+}
+
+.bg-plankhold {
+	background:url(images/workout/plankhold.jpg);
+}
+
+.bg-stretch {
+	background:url(images/workout/stretch.jpg);
+}
+
+.bg-stretch2 {
+	background:url(images/workout/stretch2.jpg);
+}
+
+.bg-barbelsquat {
+	background:url(images/workout/barbelsquat.jpg);
+}
+
+.bg-band {
+	background:url(images/workout/band.jpg);
+}
+
+.bg-classhome {
+	background:url(images/workout/classhome.jpg);
+}
+
+.bg-coach2 {
+	background:url(images/workout/coach2.jpg);
+}
+
+.bg-classes2 {
+	background:url(images/workout/classes2.jpg);
+}
+
+
+.bg-cardio {
+	background:url(images/workout/cardio.jpg);
+}
+
+.bg-tile {
+	background:url(images/tile.jpg);
+}
+
+
+
+
+.bg-fluroblue {
+    background: #06EEFF;
+    color: #2E013A;
+} 
+
+
+.parallax {
+	background-attachment: fixed;
+	min-height: 480px;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+
+.image {
+  display: block;
+  visibility: hidden;
+  width: 100%;
+  height: auto;
+}
+
+
+.placeholder_bad {
+	background: rgba(255,0,0,0.4);
+	height: 254px;
+	width: 139px;
+	margin: 8px;
+}
+
+.placeholder_good {
+	background: rgba(0,255,0,0.4);
+	height: 254px;
+	width: 139px;
+	margin: 8px;
+}
+
+
+.device {
+	margin: 8px;	
+	width: 88%;
+	object-fit: contain;
+	max-height: 640px;
+	}
+
+
+.section {
+	width: 100%;
+	text-align: center;
+	padding-top: 88px;
+	padding-bottom: 88px;
+	}
+
+.section_unpadded {
+	width: 100%;
+	text-align: center;
+	}
+
+
+.container {
+	margin: 0 auto;
+	max-width: 1280px;
+	padding-top: 32px;
+	padding-bottom: 32px;
+	}	
+	
+	
+.flex {
+	display: flex !important;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+}
+
+.flex-end {
+	display: flex;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+	align-items: flex-end;
+}
+
+.flex_start {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+}
+
+
+.no-wrap {
+	flex-direction: row;
+	flex-wrap: nowrap;
+}
+
+.flex_out {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.flex_out_horizontal {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: flex-start;
+	flex-wrap: wrap;
+}
+
+.flex_in {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+
+
+.icon {
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: contain;
+	margin-top: 16px;
+	margin-bottom: 16px;
+}
+
+
+
+.overlay {
+	width: 100%;
+	height: 64px;
+	line-height: 32px;
+	color: white;
+	font-size: 16px;
+	text-align: left;
+	font-weight: 300;
+	padding: 16px;
+}
+
+
+
+.page {
+position: relative;
+  margin: 0 auto;
+  margin-top: 0%;
+  width: 100%;
+  z-index: 18;
+  text-align: center;
+  height: auto !important;
+}
+
+.tag {
+	line-height: 24px;
+	font-size: 16px;
+	color: #E10A0B;
+	border: 2px solid #E10A0B;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	padding-left: 16px;
+	padding-right: 16px;
+	text-transform: uppercase;
+	white-space:nowrap;
+	margin: 8px;
+}
+
+
+.txt_left {
+	position: relative;
+	margin: 0 auto;
+	text-align: left;
+}
+
+
+.txt_center {
+	position: relative;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.txt_white {
+	color: #ffffff;
+}
+
+.txt_black {
+	color: #000000;
+}
+
+.txt_purple {
+	color: #2E013A;
+}
+
+.txt_fluroblue {
+	color: #06EAFB;
+}
+
+.txt_red {
+	color: #FF363B;
+}
+
+
+.txt_shadow {
+	text-shadow: 1px 2px 8px rgba(0,0,0,0.64);
+	padding: 16px;
+}
+
+
+
+
+.linkedin:hover ~ .show-word-link {
+    display: block;
+}
+
+.linkedin:hover {
+   background:url(http://www.leighmasson.com/images/social/icn_colour_linkedin.png); 
+   background-size: contain;
+   cursor: hand;
+}
+
+.linkedin:hover ~ .hide-word-connect {
+    display: none;
+}
+
+.dribbble:hover ~ .show-word-dribbble {
+    display: block;
+}
+
+.dribbble:hover {
+   background:url(http://www.leighmasson.com/images/social/icn_colour_dribbble.png); 
+   background-size: contain;
+   cursor: hand;
+}
+
+.dribbble:hover ~ .hide-word-connect {
+    display: none;
+}
+
+
+
+
+.nav {
+	position: fixed;
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;
+	background: #ffffff;
+	height: 64px;
+	margin-top: 0px;
+	z-index: 99;
+	justify-items:
+	padding-left: 8px;
+}
+
+
+.n_back {
+	font-family: roboto, montserrat, sans-serif;
+	color: #000000;
+	line-height: 64px;
+	cursor: hand;
+	text-transform: uppercase;
+}
+
+.chevron {
+	order: 1;
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background: url(images/chevron.png);
+	background-size: contain;
+	background-position: bottom center;
+	background-repeat: no-repeat;
+	height: 16px;
+}
+
+
+.break0 {
+  flex-basis: 100%;
+}
+
+.break8 {
+  flex-basis: 100%;
+  height: 8px;
+}
+
+.break16 {
+  flex-basis: 100%;
+  height: 16px;
+}
+
+.break32 {
+  flex-basis: 100%;
+  height: 16px;
+}
+
+
+.break64 {
+  flex-basis: 100%;
+  height: 64px;
+}
+
+.break80 {
+  flex-basis: 100%;
+  height: 80px;
+}
+
+
+.footer {
+	padding-top: 16px;
+	padding-bottom: 16px;
+	flex-basis: 100%;
+	color: #cccccc;
+}
+
+
+.gplay {
+	display:inline-block;
+	overflow:hidden;
+	background:url(images/googleplay.png) no-repeat;
+	background-size: contain;
+	background-position: center center;
+	height: 64px;
+	margin:16px;
+}
+
+
+.appstore {
+	display:inline-block;
+	overflow:hidden;
+	background:url(images/appstore.png) no-repeat;
+	background-size: contain;
+	background-position: center center;
+	height: 64px;
+	margin: 16px;
+	min-width: 128px;
+}
+
+.button {
+	border: 2px solid white;
+	height: 48px;
+	padding-left: 16px;
+	padding-right: 16px;
+	line-height: 48px;
+	color: white;
+	text-transform: uppercase;
+}
+
+.button:hover {
+	background: white;
+	color: purple;
+}
+
+
+/*STATS*/
+
+.stats {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify items: flex-start;
+}
+	
+.stat_cluster {
+	display: flex;
+	flex-direction: column;
+	padding-top: 16px;
+	padding-bottom: 16px;
+}
+
+
+.stat_figure {
+	font-size: 32px;
+	width: 100%;
+	text-align: left;
+}
+
+.stat_line {
+	font-size: 16px;
+	width: 100%;
+	text-align: left;
+}
+
+
+
+
+/* VIDEO PROTO*/
+
+.proto {
+	margin-top: -160px;
+	position: relative; 
+	min-width: 320px;
+	height: 640px;
+	z-index: 2;
+	overflow: hidden;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-around;
+	}
+
+.frame {
+	margin: 0 auto;
+	position: absolute;
+	display: flex;
+	min-width: 100%;
+	height: 100%;
+	background: url(images/device/empty.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center center;
+	z-index: 40;
+}
+
+.float_me {
+	margin-top: -200px;
+}
+
+.device_container {
+  height:560px;
+  width:278px;
+  background: #f8f8f8;
+  box-shadow: 8px 8px 16px 4px rgba(81,70,90,0.12);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 44px;
+  overflow: hidden;
+  z-index: 2;
+}
+
+
+.landscape {
+ transform: scale(0.8,0.8) rotate(90deg);
+ }
+
+
+.device_screen {
+  height:98%;
+  width: 90%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: 1;
+  position: absolute;
+  border-radius: 24px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.device_cover {
+  height:100%;
+  width: 100%;
+  background: url(http://www.leighmasson.com/casestudies/virgin/images/device/cover.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  z-index: 2;
+  position: absolute;
+}
+
+
+
+
+.device_airpods {
+  margin-top: -40px;
+  height:200px;
+  width: 156px;
+  background: url(http://www.leighmasson.com/casestudies/virgin/images/device/airpods.png);
+  background-size: 100% 100%;
+}
+
+
+.shadow_airpods {
+  background: rgba(81,70,90,0.12);
+  position: absolute;
+  border-radius: 40px;
+  box-shadow: 2px 2px 4px 1px rgba(81,70,90,0.12);
+  z-index: 4;
+}
+
+
+.video {
+	position: relative;
+	height: 100%;
+	width: 416px;
+	margin-left: 1.6px;
+	z-index: 3;
+	border-style: inset;
+}
+
+
+
+
+
+
+.heading {
+  font-size: 28px;
+  cursor: pointer;
+  color: #000000;
+  text-align: left;
+  width: 100%;
+  max-width: 1170px;
+  display: flex;
+  flex-direction: row;
+}
+
+.toggle {
+  display: flex;
+  width: 64px;
+  height: 32px;
+  border-radius: 32px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+  border: 2px solid black;
+}
+
+
+.toggle_ball {
+  margin-left: 4px;
+  margin-right: 4px;
+  display: block;
+  height: 28px;
+  width: 28px;
+  background: black;
+  border-radius: 32px;
+  transition: background-color 1s ease;
+}
+
+.before {
+  padding-left: 24px;
+  padding-right: 8px;
+  font-weight: bold;
+  display: block;
+}
+
+.after {
+  padding-left: 24px;
+  padding-right: 8px;
+  font-weight: bold;
+  display: none;
+}
+
+.group {
+  font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  padding-top: 64px;
+  padding-bottom: 64px;
+  width: 100%;
+  min-height: 160px;
+  /*background: #f8f8f8;*/
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+  transition: background 1s ease;
+}
+
+.box {
+  padding: 16px;
+  font-size: 16px;
+  flex: 1;
+  width: 96%;
+  max-width: 1170px;
+}
+
+.gap {
+  padding-top: 48px;
+  background: none;
+  color: #f8f8f8;
+  transition: color 1s ease;
+  font-weight: bold;
+}
+
+.card {
+  background: white;
+  box-shadow: 2px 2px 8px 2px rgba(0, 0, 0, 0.08);
+  margin: 2px;
+  color: black;
+}
+
+
+
+
+/* MOBILE NAV */
+
+.hamburger {
+  display: block;
+  position: relative;
+  width: 24px;
+  height: 24px;
+  overflow: none;
+  background: #51465A;
+  -webkit-transition: background 0.2s ease-in-out;
+  -moz-transition: background 0.2s ease-in-out;
+  transition: background 0.2s ease-in-out;
+}
+
+.hamburger:before, .hamburger:after {
+  content: '';
+  position: absolute;
+  top: 20%;
+  left: 0;
+  width: 100%;
+  height: 20%;
+  background-color: white;
+  -webkit-transition-property: -webkit-transform, top;
+  -moz-transition-property: -moz-transform, top;
+  transition-property: transform, top;
+  -webkit-transition-duration: 0.2s;
+  -moz-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  -webkit-transition-timing-function: ease;
+  -moz-transition-timing-function: ease;
+  transition-timing-function: ease;
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  -o-transform: translateZ(0);
+  transform: translateZ(0);
+}
+
+.hamburger:after {
+  top: 60%;
+}
+
+.hamburger.open {
+  background-color: #8800FF;
+  border-radius: 4px;
+}
+.hamburger.open:before, .hamburger.open:after {
+  top: 40%;
+  border-radius: 2px;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.hamburger.open:after {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+
+
+/* OTHER MENU STUFF */
+
+:root {
+  --space: 1rem;
+  --border: 4px;
+  --color-link: #51465A;
+  --color-active: #8800FF;
+  --ease: cubic-bezier(0.24, 1, 0.32, 1);
+  --duration: 350ms;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+
+html {
+  --scroll-behavior: smooth;
+  scroll-behavior: var(--scroll-behavior);
+}
+@media (prefers-reduced-motion: reduce) {
+  html {
+    --scroll-behavior: auto;
+  }
+}
+
+ul {
+  list-style: none;
+  list-style-type: none !important;
+}
+
+ul:not(.menu) {
+  list-style: none;
+  list-style-type: none !important;
+}
+ul:not(.menu) > li + li {
+  margin-top: var(--space);
+}
+
+.nav-desktop {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.08);
+  z-index: 100;
+}
+.nav-desktop .menu {
+  width: 96%;
+  max-width: 1280px;
+  position: relative;
+  display: -webkit-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+          flex-direction: row;
+  -webkit-box-align: end;
+          align-items: flex-end;
+  flex-wrap: nowrap;
+  overflow: scroll;
+  -ms-overflow-style: none;
+  margin: 0 auto;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+  -webkit-transition: -webkit-transform var(--ease) var(--duration);
+  transition: -webkit-transform var(--ease) var(--duration);
+  transition: transform var(--ease) var(--duration);
+  transition: transform var(--ease) var(--duration), -webkit-transform var(--ease) var(--duration);
+}
+.nav-desktop .menu::-webkit-scrollbar {
+  display: none;
+}
+.nav-desktop .menu-item-link {
+  display: block;
+  padding: calc(var(--space) * 1.5) var(--space);
+  text-decoration: none;
+  white-space: nowrap;
+  color: var(--color-link);
+  -webkit-transition: color var(--ease) var(--duration);
+  transition: color var(--ease) var(--duration);
+}
+.nav-desktop .menu-item-link.active {
+  color: var(--color-active);
+}
+
+.active-line {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 4px;
+  background-color: var(--color-active);
+  -webkit-transition: width var(--ease) var(--duration), -webkit-transform var(--ease) var(--duration);
+  transition: width var(--ease) var(--duration), -webkit-transform var(--ease) var(--duration);
+  transition: width var(--ease) var(--duration), transform var(--ease) var(--duration);
+  transition: width var(--ease) var(--duration), transform var(--ease) var(--duration), -webkit-transform var(--ease) var(--duration);
+}
+
+.page-section {
+  padding-top: 80px;
+  padding-left: 32px;
+  padding-right: 32px;
+  min-height: 64vh;
+}
+
+.pretext {
+	font-weight: 300;
+}
+
+.menu-item {
+line-height: 20px;
+text-align: left;
+font-weight: 700;
+margin-left: 8px;
+margin-right: 8px;
+
+}

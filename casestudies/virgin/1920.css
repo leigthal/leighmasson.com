@@ -1,0 +1,92 @@
+@media screen and (min-width: 1170px) {
+
+
+
+
+/* MENU */
+
+  .nav-desktop {
+    display: block;
+  }
+
+  .nav-mobile {
+    display: none;
+  }
+  
+  .menu-item {
+font-size: 14px;}
+
+
+
+
+
+/* End Menu */
+
+.container {
+	width: 88%;
+	max-width: 1170px;
+	}	
+	
+.box50 {
+	/*display: block;*/
+	width: 48%;
+}
+
+.order_a_image {
+	order: 1;
+}
+
+.order_a_text {
+	order: 2;
+}
+
+
+.order_b_image {
+	order: 2;
+}
+
+.order_b_text {
+	order: 1;
+}
+
+.icon {
+	min-width: 160px;
+}
+
+
+.device_container {
+  transform: scale(0.96,0.96);
+}
+
+.shadow_airpods {
+  height:160px;
+  width: 156px;
+  position: absolute;
+  margin-top: 440px;
+  margin-left: -200px;
+}
+
+.device_airpods {
+  margin-top: -40px;
+  height:200px;
+  width: 156px;
+  background: url(http://www.leighmasson.com/casestudies/virgin/images/device/airpods.png);
+  background-size: 100% 100%;
+}
+
+
+.landscape {
+ transform: scale(0.8,0.8) rotate(90deg);
+ }
+
+
+
+
+/*STATS*/
+
+.stat_cluster {
+	width: 24%;
+}
+
+
+}

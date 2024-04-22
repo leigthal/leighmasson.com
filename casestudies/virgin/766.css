@@ -1,0 +1,193 @@
+@media screen and (max-width: 766px) {
+
+.container {
+	max-width: 88%;
+	margin: 0 auto;
+	}	
+	
+	
+.box50 {
+	/*display: block;*/
+	width: 100%;
+}
+
+.order_a_image {
+	order: 1;
+}
+
+.order_a_text {
+	order: 2;
+}
+
+
+.order_b_image {
+	order: 1;
+}
+
+.order_b_text {
+	order: 2;
+}
+
+
+.icon {
+	min-width: 80px;
+}
+
+.device_container {
+  transform: scale(0.80,0.80);
+}
+
+.shadow_airpods {
+  margin-top: 400px;
+  margin-left: -104px;
+  transform: scale(0.72,0.72);
+}
+
+.device_airpods {
+  margin-top: -40px;
+  height:200px;
+  width: 156px;
+  background: url(http://www.leighmasson.com/casestudies/virgin/images/device/airpods.png);
+  background-size: 100% 100%;
+}
+
+
+
+.landscape {
+ transform: scale(0.64,0.64) rotate(90deg);
+  width: 278px; }
+
+
+.parallax {
+	min-height: 240px;
+	background-attachment: scroll;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.bg-hero {
+	background-position: right;
+}
+
+.gplay {
+	display:inline-block;
+	overflow:hidden;
+	background:url(images/googleplay.png) no-repeat;
+	background-size: contain;
+	background-position: center center;
+	min-width: 128px;
+	height: 64px;
+	margin:16px;
+}
+
+
+.appstore {
+	display:inline-block;
+	overflow:hidden;
+	background:url(images/appstore.png) no-repeat;
+	background-size: contain;
+	background-position: center center;
+	min-width: 128px;
+	height: 64px;
+	margin: 16px;
+}
+
+
+/*STATS*/
+
+.stat_cluster {
+	width: 100%;
+}
+
+
+/* MENU */
+
+.nav-desktop {
+    display: none;
+  }
+
+  .menu-item {
+    margin: 0 auto;
+    height: 64px;
+    line-height: 80px;
+    padding-left: 32px;
+    font-size: 16px;
+  }
+
+  .nav-mobile a:not(:first-child) {
+    display: none;
+  }
+
+  .nav-mobile a.icon {
+    float: right;
+    display: block;
+  }
+  
+ 
+
+  .nav-mobile {
+  height: 64px;
+    overflow: hidden;
+    background: white;
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+
+  }
+  
+  .navicon {
+  	height: 64px;
+	  display: flex;
+	  flex-direction: column;
+	  align-items: flex-end;
+	  justify-content:center;
+	  position: absolute;
+
+	      width: 96%;
+    padding-right:16px;
+    padding-left: 16px;
+	  
+  }
+
+  .nav-mobile a {
+    float: left;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: #51465A;
+  }
+
+  .nav-mobile a:hover {
+    color: red;
+  }
+
+  .nav-mobile a.active {
+    color: purple;
+  }
+
+  .nav-mobile.responsive {
+    height: 100vh;
+    background: white;
+  }
+
+
+
+  .nav-mobile.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .nav-mobile.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  
+}
+
+
+
+
+
